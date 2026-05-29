@@ -2,9 +2,384 @@
 	(version 20260306)
 	(generator "eeschema")
 	(generator_version "10.0")
-	(uuid c895ac8d-c639-4fea-ba83-739985d9c75e)
+	(uuid "c895ac8d-c639-4fea-ba83-739985d9c75e")
 	(paper "A4")
+	(title_block
+		(title "AQUABOX II")
+		(date "2026-05-29")
+		(rev "1.0.0")
+		(company "Invenctus Soluções Tecnológicas")
+		(comment 1 "Eng. José Adriano")
+	)
 	(lib_symbols)
+	(sheet
+		(at 62.23 86.36)
+		(size 30.48 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0b63a039-e53a-49f8-ad12-ae88526dbeca")
+		(property "Sheetname" "Inputs"
+			(at 62.23 85.6484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "inputs.kicad_sch"
+			(at 62.23 102.1846 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 125.73)
+		(size 30.48 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "0e3d0365-eee5-4e08-8969-d2d62d095df5")
+		(property "Sheetname" "RTC_SD"
+			(at 63.5 125.0184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rtc_sd.kicad_sch"
+			(at 63.5 137.7446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 52.07)
+		(size 33.02 72.39)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "38445a07-7dc1-4dfd-aa58-185ce46ba2bf")
+		(property "Sheetname" "ESP32_S3"
+			(at 127 51.3584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32_s3.kicad_sch"
+			(at 127 125.0446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 60.96 48.26)
+		(size 31.75 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "44a7b396-f10f-46a5-80f2-f6866e22a5c3")
+		(property "Sheetname" "Power"
+			(at 60.96 47.5484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 60.96 62.8146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 140.97)
+		(size 34.29 13.97)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4ad84b2b-36b4-4146-9065-46415d91865d")
+		(property "Sheetname" "Expansion"
+			(at 127 140.2584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "expansion.kicad_sch"
+			(at 127 155.5246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 195.58 82.55)
+		(size 30.48 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "51fc3b24-f587-445a-bdc6-431da63f057d")
+		(property "Sheetname" "Pump_Relay"
+			(at 195.58 81.8384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pump_relay.kicad_sch"
+			(at 195.58 99.6446 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 194.31 49.53)
+		(size 30.48 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "75f5be90-ea51-4758-9779-88012aab32ff")
+		(property "Sheetname" "Display"
+			(at 194.31 48.8184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Display.kicad_sch"
+			(at 194.31 65.3546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 195.58 113.03)
+		(size 31.75 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "ef4d3825-84ec-47ae-a142-b70e289b2098")
+		(property "Sheetname" "Solenoids"
+			(at 195.58 112.3184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "solenoids.kicad_sch"
+			(at 195.58 128.8546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "6")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
