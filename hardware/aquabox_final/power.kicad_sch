@@ -4,6 +4,13 @@
 	(generator_version "10.0")
 	(uuid "f7bd97c9-7053-433d-954a-f75e290b065d")
 	(paper "A4")
+	(title_block
+		(title "Power")
+		(date "2026-06-02")
+		(rev "1.0.0")
+		(company "INVENCTUS - Soluções Tecnológicas")
+		(comment 1 "Eng. José Adriano")
+	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x04"
 			(pin_names
@@ -2509,16 +2516,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 93.98) (xy 63.5 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0edecfef-6b15-49c6-a1e2-3b4b14ab8dbd")
-	)
-	(wire
-		(pts
 			(xy 123.19 101.6) (xy 123.19 105.41)
 		)
 		(stroke
@@ -2609,6 +2606,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 96.52) (xy 62.23 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27944c4e-6518-4133-a8f4-a5b4577a718a")
+	)
+	(wire
+		(pts
 			(xy 234.95 99.06) (xy 234.95 110.49)
 		)
 		(stroke
@@ -2676,6 +2683,16 @@
 			(type default)
 		)
 		(uuid "66e9e8ed-a6bf-481b-963a-d76520565714")
+	)
+	(wire
+		(pts
+			(xy 59.69 93.98) (xy 62.23 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "680ca5c9-0953-47b3-bff2-4c886d675c7d")
 	)
 	(wire
 		(pts
@@ -2849,16 +2866,6 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 96.52) (xy 63.5 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3d9e068-6f41-430d-8124-b3f5e0d0f8de")
-	)
-	(wire
-		(pts
 			(xy 190.5 93.98) (xy 190.5 97.79)
 		)
 		(stroke
@@ -2946,6 +2953,30 @@
 			(type default)
 		)
 		(uuid "f38e9b23-59ed-4ffb-b223-612091539187")
+	)
+	(global_label "R-C"
+		(shape input)
+		(at 62.23 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "10f564c5-b09e-4d3c-ae37-f9d6a7a0ede2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.3276 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(global_label "PHASE"
 		(shape input)
@@ -3043,27 +3074,29 @@
 			)
 		)
 	)
-	(hierarchical_label "R-C"
+	(global_label "R-NO"
 		(shape input)
-		(at 63.5 96.52 0)
+		(at 62.23 93.98 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "29cb2b08-21f2-4cb6-9b30-641b695beef8")
-	)
-	(hierarchical_label "R-NO"
-		(shape input)
-		(at 63.5 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "ffff3d19-6ffb-4e83-9a85-5846e3bf2054")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 70.7186 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
-			(justify left)
 		)
-		(uuid "fc7420e5-80aa-4d65-82da-8bf456cf83f5")
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x04")
@@ -3886,7 +3919,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4K7"
+		(property "Value" "220R"
 			(at 193.04 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
