@@ -1090,170 +1090,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -1917,12 +1753,6 @@
 		(uuid "2bca6cda-c50e-4640-9baf-dca47bcb8ac5")
 	)
 	(junction
-		(at 22.86 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2dadb402-577f-40f8-9361-38d91f463405")
-	)
-	(junction
 		(at 160.02 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2053,18 +1883,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cb8ce65a-1806-417a-bb29-da1d9f655408")
-	)
-	(junction
-		(at 22.86 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cc76ec3d-1c62-46e2-bbc4-ff60d5b24af9")
-	)
-	(junction
-		(at 22.86 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e20d923b-e70c-452c-bec0-ccf3b38fd48e")
 	)
 	(junction
 		(at 73.66 123.19)
@@ -2670,16 +2488,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 149.86) (xy 30.48 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58110318-567d-4fef-bd01-9240b57b8a83")
-	)
-	(wire
-		(pts
 			(xy 45.72 185.42) (xy 54.61 185.42)
 		)
 		(stroke
@@ -2807,16 +2615,6 @@
 			(type default)
 		)
 		(uuid "66af3855-0b55-4d79-8b20-36a12b28c26a")
-	)
-	(wire
-		(pts
-			(xy 40.64 149.86) (xy 54.61 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "673187b4-5df5-4dfc-9ce9-abddc4f1912b")
 	)
 	(wire
 		(pts
@@ -3020,16 +2818,6 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 138.43) (xy 22.86 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85a78eb6-38fd-460a-a820-6f63fab72287")
-	)
-	(wire
-		(pts
 			(xy 154.94 93.98) (xy 160.02 93.98)
 		)
 		(stroke
@@ -3067,26 +2855,6 @@
 			(type default)
 		)
 		(uuid "88dca482-2fca-4d14-af72-225aaa8deb57")
-	)
-	(wire
-		(pts
-			(xy 40.64 138.43) (xy 45.72 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a458116-b97f-4f06-9e28-56b4c6ddbab0")
-	)
-	(wire
-		(pts
-			(xy 22.86 172.72) (xy 22.86 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8abebb73-b982-4176-b794-ffa95a2d3ab9")
 	)
 	(wire
 		(pts
@@ -3210,16 +2978,6 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 161.29) (xy 22.86 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95e9790a-020e-4fe3-8a4c-bd04813678a8")
-	)
-	(wire
-		(pts
 			(xy 161.29 144.78) (xy 161.29 149.86)
 		)
 		(stroke
@@ -3257,16 +3015,6 @@
 			(type default)
 		)
 		(uuid "9e5dd3b4-9ee6-4f64-bd4c-6b27e75e82f0")
-	)
-	(wire
-		(pts
-			(xy 22.86 172.72) (xy 30.48 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9eadfa6a-c9dc-4384-87fc-bbeb20e537f5")
 	)
 	(wire
 		(pts
@@ -3397,16 +3145,6 @@
 			(type default)
 		)
 		(uuid "b420cea2-90cd-41db-aed5-6abe552906a6")
-	)
-	(wire
-		(pts
-			(xy 22.86 138.43) (xy 22.86 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6acb38b-07eb-4726-ab12-3c1519c63306")
 	)
 	(wire
 		(pts
@@ -3550,16 +3288,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 161.29) (xy 63.5 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4f1b59d-2d36-47ed-b9d5-d4c9e040aa56")
-	)
-	(wire
-		(pts
 			(xy 134.62 27.94) (xy 134.62 30.48)
 		)
 		(stroke
@@ -3637,16 +3365,6 @@
 			(type default)
 		)
 		(uuid "df6bf975-9d0a-4bde-a65e-6138db15a338")
-	)
-	(wire
-		(pts
-			(xy 22.86 161.29) (xy 30.48 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e063b55d-f0ac-446f-aad3-95328775b40e")
 	)
 	(wire
 		(pts
@@ -3800,16 +3518,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 172.72) (xy 73.66 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f97ddcf1-e0b8-4def-a710-5dab1eedd79a")
-	)
-	(wire
-		(pts
 			(xy 63.5 171.45) (xy 63.5 185.42)
 		)
 		(stroke
@@ -3867,16 +3575,6 @@
 			(type default)
 		)
 		(uuid "fdcb8f16-64f2-4fdd-b37b-8e5a8e6f8ddc")
-	)
-	(wire
-		(pts
-			(xy 22.86 149.86) (xy 22.86 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdf07417-af3a-4fd8-8b00-2e13a4d8ab16")
 	)
 	(wire
 		(pts
@@ -4752,86 +4450,6 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 35.56 149.86 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0bd8fd32-d58a-46ef-9feb-db741f079d89")
-		(property "Reference" "SW2"
-			(at 35.56 142.24 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 35.56 144.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 35.56 149.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82ffa37f-c9b9-47cc-b661-39fac81f7f4a")
-		)
-		(pin "2"
-			(uuid "5b2ec966-a39c-4403-86f7-01ef48b5d0c8")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -5799,84 +5417,6 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
 					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 22.86 179.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2644d66d-5856-47de-9846-1bf31f682518")
-		(property "Reference" "#PWR026"
-			(at 22.86 185.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 22.86 184.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "757ddae4-ab56-4036-ab66-b68cf9259c51")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -7287,86 +6827,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 35.56 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "793841ac-000a-4376-8189-4890f8491805")
-		(property "Reference" "SW4"
-			(at 35.56 165.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 35.56 167.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 167.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 35.56 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "416dcb68-4c7b-4da4-b334-a9f9044c5354")
-		)
-		(pin "2"
-			(uuid "b013bf6e-e40f-4d2d-a190-2c197d1aa085")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
-					(reference "SW4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 246.38 85.09 0)
 		(unit 1)
@@ -8197,86 +7657,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 35.56 161.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "92fdcc9b-0a3c-4a94-a20d-896bf99c827c")
-		(property "Reference" "SW3"
-			(at 35.56 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 35.56 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 35.56 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9308349a-6323-4669-81a1-a49e989ea0f4")
-		)
-		(pin "2"
-			(uuid "551f6ed7-40f3-4daa-875c-6d810472f458")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
 		(at 260.35 133.35 0)
 		(unit 1)
@@ -8355,86 +7735,6 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 35.56 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "96949819-f0a0-4c31-adb5-fd45ce6e9494")
-		(property "Reference" "SW1"
-			(at 35.56 130.81 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 35.56 133.35 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 35.56 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 35.56 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 35.56 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4b9c7033-451e-4375-8218-754a3b4ba4b0")
-		)
-		(pin "2"
-			(uuid "a2a6300a-327c-4ba6-989b-88287499e49b")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/0b63a039-e53a-49f8-ad12-ae88526dbeca"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
