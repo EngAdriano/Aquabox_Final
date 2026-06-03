@@ -197,7 +197,7 @@
 		)
 	)
 	(sheet
-		(at 127 140.97)
+		(at 195.58 110.49)
 		(size 34.29 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -213,7 +213,7 @@
 		)
 		(uuid "4ad84b2b-36b4-4146-9065-46415d91865d")
 		(property "Sheetname" "Expansion"
-			(at 127 140.2584 0)
+			(at 195.58 109.7784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -224,7 +224,7 @@
 			)
 		)
 		(property "Sheetfile" "expansion.kicad_sch"
-			(at 127 155.5246 0)
+			(at 195.58 125.0446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -243,7 +243,7 @@
 		)
 	)
 	(sheet
-		(at 195.58 82.55)
+		(at 195.58 52.07)
 		(size 30.48 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -259,7 +259,7 @@
 		)
 		(uuid "51fc3b24-f587-445a-bdc6-431da63f057d")
 		(property "Sheetname" "Pump_Relay"
-			(at 195.58 81.8384 0)
+			(at 195.58 51.3584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -270,7 +270,7 @@
 			)
 		)
 		(property "Sheetfile" "pump_relay.kicad_sch"
-			(at 195.58 99.6446 0)
+			(at 195.58 69.1646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -289,53 +289,7 @@
 		)
 	)
 	(sheet
-		(at 194.31 49.53)
-		(size 30.48 15.24)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "75f5be90-ea51-4758-9779-88012aab32ff")
-		(property "Sheetname" "Display"
-			(at 194.31 48.8184 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "Display.kicad_sch"
-			(at 194.31 65.3546 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 195.58 113.03)
+		(at 195.58 82.55)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -351,7 +305,7 @@
 		)
 		(uuid "ef4d3825-84ec-47ae-a142-b70e289b2098")
 		(property "Sheetname" "Solenoids"
-			(at 195.58 112.3184 0)
+			(at 195.58 81.8384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -362,7 +316,7 @@
 			)
 		)
 		(property "Sheetfile" "solenoids.kicad_sch"
-			(at 195.58 128.8546 0)
+			(at 195.58 98.3746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

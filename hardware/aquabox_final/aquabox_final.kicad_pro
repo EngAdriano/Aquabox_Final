@@ -648,7 +648,7 @@
         "uuid": "c895ac8d-c639-4fea-ba83-739985d9c75e"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R25-27,J5-7,D8,#PWR30-38,U9",
     "variants": []
   },
   "sheets": [
@@ -663,10 +663,6 @@
     [
       "38445a07-7dc1-4dfd-aa58-185ce46ba2bf",
       "ESP32_S3"
-    ],
-    [
-      "75f5be90-ea51-4758-9779-88012aab32ff",
-      "Display"
     ],
     [
       "0b63a039-e53a-49f8-ad12-ae88526dbeca",
