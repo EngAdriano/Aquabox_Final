@@ -3995,7 +3995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "174c9a6c-000a-4951-b37a-0c63536cd0d3")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR06"
 			(at 234.95 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -4055,7 +4055,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR03")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4159,7 +4159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e0bcf1b-f2f3-44cd-bd8d-612ee7cfb295")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR02"
 			(at 64.77 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -4219,7 +4219,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR035")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4569,7 +4569,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4022d355-f142-4560-87d2-0d7785724146")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR01"
 			(at 64.77 71.12 0)
 			(hide yes)
 			(show_name no)
@@ -4629,7 +4629,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR036")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4729,7 +4729,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a89c6d96-a63d-4568-9a21-6091caf04c45")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR05"
 			(at 215.9 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4789,7 +4789,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR01")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4807,7 +4807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aab089d2-f0fd-4a2e-b116-c18f34dd2c87")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR07"
 			(at 234.95 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4867,7 +4867,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR04")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4885,7 +4885,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b67ac1fa-3fb8-4202-9994-03cdb736d40a")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR04"
 			(at 190.5 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -4945,7 +4945,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR05")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5045,7 +5045,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d59ca713-97eb-47b7-a456-91f20b0d3b4a")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 190.5 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -5105,7 +5105,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5215,7 +5215,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e91546f4-de4f-414c-bfda-1146e40c0047")
-		(property "Reference" "J6"
+		(property "Reference" "J1"
 			(at 53.34 78.994 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5277,7 +5277,7 @@
 		(instances
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
-					(reference "J6")
+					(reference "J1")
 					(unit 1)
 				)
 			)
