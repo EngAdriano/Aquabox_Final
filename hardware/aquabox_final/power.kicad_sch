@@ -2920,10 +2920,22 @@
 		(uuid "4c72bafd-1f8e-4cee-9f38-4dfe310468eb")
 	)
 	(junction
+		(at 69.85 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5465a02d-e513-45c0-8252-c968bd6f88b2")
+	)
+	(junction
 		(at 139.7 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "551c33d2-9c94-4f05-a129-c20c43c8ea9a")
+	)
+	(junction
+		(at 69.85 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8196d82f-f91d-45be-a06c-49ae7aeb95d8")
 	)
 	(junction
 		(at 106.68 90.17)
@@ -3067,13 +3079,13 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 73.66) (xy 64.77 73.66)
+			(xy 69.85 45.72) (xy 69.85 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2690b62c-fcb5-4e02-af81-c51e94a282ac")
+		(uuid "24136f77-eee1-4d43-ab22-0a47a317f11e")
 	)
 	(wire
 		(pts
@@ -3087,16 +3099,6 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 78.74) (xy 64.77 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28b039f1-f097-46e1-b782-ef6055d62fa8")
-	)
-	(wire
-		(pts
 			(xy 234.95 99.06) (xy 234.95 110.49)
 		)
 		(stroke
@@ -3104,6 +3106,26 @@
 			(type default)
 		)
 		(uuid "2ae6a7d1-9264-4e20-a028-a7f61d307d49")
+	)
+	(wire
+		(pts
+			(xy 59.69 57.15) (xy 64.77 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d18f636-67e5-4482-8b0e-86db980e782e")
+	)
+	(wire
+		(pts
+			(xy 69.85 68.58) (xy 69.85 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dfded15-5f59-406a-b39d-7172a76066d0")
 	)
 	(wire
 		(pts
@@ -3124,6 +3146,36 @@
 			(type default)
 		)
 		(uuid "489d7c5f-51cf-49c9-b266-3740e3cec80d")
+	)
+	(wire
+		(pts
+			(xy 64.77 57.15) (xy 64.77 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4afc52df-ceca-4e97-9d49-360655420481")
+	)
+	(wire
+		(pts
+			(xy 64.77 45.72) (xy 69.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4cc1f0b8-d481-4ff3-9d02-038a59888cf4")
+	)
+	(wire
+		(pts
+			(xy 69.85 54.61) (xy 69.85 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5638b726-1bbb-4b70-8c99-a1962ea6d606")
 	)
 	(wire
 		(pts
@@ -3257,6 +3309,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 64.77) (xy 69.85 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91d3f61d-9734-4efd-8739-74810ee10464")
+	)
+	(wire
+		(pts
 			(xy 146.05 90.17) (xy 146.05 93.98)
 		)
 		(stroke
@@ -3274,6 +3336,16 @@
 			(type default)
 		)
 		(uuid "93e5dd51-7362-4953-8986-e2e51ccb1458")
+	)
+	(wire
+		(pts
+			(xy 64.77 59.69) (xy 64.77 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9616c3df-9b9b-4530-b461-74954c2819ba")
 	)
 	(wire
 		(pts
@@ -3337,6 +3409,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 59.69) (xy 64.77 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2be96e9-f336-4480-bd3b-b09b0a65f91a")
+	)
+	(wire
+		(pts
 			(xy 203.2 106.68) (xy 190.5 106.68)
 		)
 		(stroke
@@ -3344,16 +3426,6 @@
 			(type default)
 		)
 		(uuid "bc27f28b-8fdc-467b-b7a7-bec1abdbf63a")
-	)
-	(wire
-		(pts
-			(xy 64.77 71.12) (xy 58.42 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf912ad3-3fb9-4591-bf6f-bfb35e9005d2")
 	)
 	(wire
 		(pts
@@ -3374,6 +3446,16 @@
 			(type default)
 		)
 		(uuid "ce150c6e-e6a7-48e4-a9b1-674e44751605")
+	)
+	(wire
+		(pts
+			(xy 69.85 43.18) (xy 69.85 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f91fcb-3fec-4f66-93da-1fcf47e9c2f4")
 	)
 	(wire
 		(pts
@@ -3447,13 +3529,13 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 67.31) (xy 64.77 71.12)
+			(xy 64.77 68.58) (xy 69.85 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc1f440e-abf3-4679-8391-9fcf87956a9a")
+		(uuid "ffc013cc-e076-4aa3-b19a-34533f8ca778")
 	)
 	(global_label "R-C"
 		(shape input)
@@ -4149,7 +4231,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 64.77 78.74 0)
+		(at 69.85 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4160,7 +4242,7 @@
 		(fields_autoplaced yes)
 		(uuid "2e0bcf1b-f2f3-44cd-bd8d-612ee7cfb295")
 		(property "Reference" "#PWR02"
-			(at 64.77 85.09 0)
+			(at 69.85 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4171,7 +4253,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 64.77 83.82 0)
+			(at 69.85 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4181,7 +4263,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 78.74 0)
+			(at 69.85 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4192,7 +4274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 78.74 0)
+			(at 69.85 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4203,7 +4285,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 64.77 78.74 0)
+			(at 69.85 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4559,7 +4641,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 64.77 67.31 0)
+		(at 69.85 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4570,7 +4652,7 @@
 		(fields_autoplaced yes)
 		(uuid "4022d355-f142-4560-87d2-0d7785724146")
 		(property "Reference" "#PWR01"
-			(at 64.77 71.12 0)
+			(at 69.85 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4581,7 +4663,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 64.77 62.23 0)
+			(at 69.85 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4591,7 +4673,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 67.31 0)
+			(at 69.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4602,7 +4684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 64.77 67.31 0)
+			(at 69.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4613,7 +4695,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 64.77 67.31 0)
+			(at 69.85 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4712,6 +4794,88 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "817f88e4-5394-4ba2-bda3-810d34c9c7d2")
+		(property "Reference" "R45"
+			(at 72.39 49.5299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1K"
+			(at 72.39 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.072 50.8 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "965d3476-a07d-4de6-aeef-387130c5481c")
+		)
+		(pin "2"
+			(uuid "a8a2b7db-cd12-469c-8c3e-be9061c9f651")
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -5206,7 +5370,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 53.34 73.66 180)
+		(at 54.61 57.15 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5216,7 +5381,7 @@
 		(dnp no)
 		(uuid "e91546f4-de4f-414c-bfda-1146e40c0047")
 		(property "Reference" "J1"
-			(at 53.34 78.994 0)
+			(at 54.864 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5226,7 +5391,7 @@
 			)
 		)
 		(property "Value" "Entrada de 12V"
-			(at 53.34 76.708 0)
+			(at 54.61 62.992 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5236,7 +5401,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 73.66 0)
+			(at 54.61 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5247,7 +5412,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 73.66 0)
+			(at 54.61 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5258,7 +5423,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 53.34 73.66 0)
+			(at 54.61 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5278,6 +5443,99 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 69.85 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2bc130d-b73f-43be-b66c-6d8603f7b0df")
+		(property "Reference" "D11"
+			(at 73.66 61.2774 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RED"
+			(at 73.66 63.8174 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 69.85 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dbca5358-15e6-4a49-ab93-662a58bcb07a")
+		)
+		(pin "1"
+			(uuid "b382f369-d3e7-44d4-9547-ce3688529b59")
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/44a7b396-f10f-46a5-80f2-f6866e22a5c3"
+					(reference "D11")
 					(unit 1)
 				)
 			)
