@@ -13,7 +13,7 @@
 	)
 	(lib_symbols)
 	(sheet
-		(at 62.23 86.36)
+		(at 64.77 93.98)
 		(size 30.48 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29,7 +29,7 @@
 		)
 		(uuid "0b63a039-e53a-49f8-ad12-ae88526dbeca")
 		(property "Sheetname" "Inputs"
-			(at 62.23 85.6484 0)
+			(at 64.77 93.2684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -40,7 +40,7 @@
 			)
 		)
 		(property "Sheetfile" "inputs.kicad_sch"
-			(at 62.23 102.1846 0)
+			(at 64.77 109.8046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -59,8 +59,8 @@
 		)
 	)
 	(sheet
-		(at 63.5 125.73)
-		(size 30.48 11.43)
+		(at 193.04 93.98)
+		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -75,7 +75,7 @@
 		)
 		(uuid "0e3d0365-eee5-4e08-8969-d2d62d095df5")
 		(property "Sheetname" "RTC_SD"
-			(at 63.5 125.0184 0)
+			(at 193.04 93.2684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -86,7 +86,7 @@
 			)
 		)
 		(property "Sheetfile" "rtc_sd.kicad_sch"
-			(at 63.5 137.7446 0)
+			(at 193.04 109.8046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -105,7 +105,7 @@
 		)
 	)
 	(sheet
-		(at 127 52.07)
+		(at 128.27 52.07)
 		(size 33.02 72.39)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -121,7 +121,7 @@
 		)
 		(uuid "38445a07-7dc1-4dfd-aa58-185ce46ba2bf")
 		(property "Sheetname" "ESP32_S3"
-			(at 127 51.3584 0)
+			(at 128.27 51.3584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -132,7 +132,7 @@
 			)
 		)
 		(property "Sheetfile" "esp32_s3.kicad_sch"
-			(at 127 125.0446 0)
+			(at 128.27 125.0446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -151,7 +151,7 @@
 		)
 	)
 	(sheet
-		(at 60.96 48.26)
+		(at 63.5 55.88)
 		(size 31.75 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -167,7 +167,7 @@
 		)
 		(uuid "44a7b396-f10f-46a5-80f2-f6866e22a5c3")
 		(property "Sheetname" "Power"
-			(at 60.96 47.5484 0)
+			(at 63.5 55.1684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -178,7 +178,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 60.96 62.8146 0)
+			(at 63.5 70.4346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -197,53 +197,7 @@
 		)
 	)
 	(sheet
-		(at 194.31 92.71)
-		(size 34.29 13.97)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "4ad84b2b-36b4-4146-9065-46415d91865d")
-		(property "Sheetname" "Expansion"
-			(at 194.31 91.9984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "expansion.kicad_sch"
-			(at 194.31 107.2646 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 194.31 64.77)
+		(at 191.77 58.42)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -259,7 +213,7 @@
 		)
 		(uuid "ef4d3825-84ec-47ae-a142-b70e289b2098")
 		(property "Sheetname" "Solenoids_Bomba"
-			(at 194.31 64.0584 0)
+			(at 191.77 57.7084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -270,7 +224,7 @@
 			)
 		)
 		(property "Sheetfile" "solenoids.kicad_sch"
-			(at 194.31 80.5946 0)
+			(at 191.77 74.2446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
