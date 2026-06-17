@@ -2462,145 +2462,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2899,12 +2760,6 @@
 		(uuid "b0e41923-51c8-4cd0-85d9-8f0bce2b0dec")
 	)
 	(junction
-		(at 190.5 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba0cc729-82bd-4ca1-8e00-a8156c91c07d")
-	)
-	(junction
 		(at 72.39 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2941,16 +2796,6 @@
 			(type default)
 		)
 		(uuid "001d10e5-7335-47e1-a20c-21ef0b05202e")
-	)
-	(wire
-		(pts
-			(xy 190.5 87.63) (xy 190.5 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00357e11-1d8e-4088-9ec5-fd40cb4e138e")
 	)
 	(wire
 		(pts
@@ -3101,6 +2946,16 @@
 			(type default)
 		)
 		(uuid "2ff1db04-7d87-4eb7-a11d-a02f2bdcbc4e")
+	)
+	(wire
+		(pts
+			(xy 213.36 124.46) (xy 213.36 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "331a09fc-c486-4f7e-aa44-a11d0dfe18eb")
 	)
 	(wire
 		(pts
@@ -3574,16 +3429,6 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 124.46) (xy 213.36 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a54bff69-1e76-4cb1-a183-08f8d71e8f29")
-	)
-	(wire
-		(pts
 			(xy 109.22 139.7) (xy 109.22 147.32)
 		)
 		(stroke
@@ -3871,6 +3716,16 @@
 			(type default)
 		)
 		(uuid "e23e3caa-6af8-4371-8722-c372f35a5ae7")
+	)
+	(wire
+		(pts
+			(xy 213.36 87.63) (xy 213.36 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e44d4e4f-84b9-4880-a1a4-dcb527ddd7fb")
 	)
 	(wire
 		(pts
@@ -6520,6 +6375,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND1")
+		(at 213.36 127 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5deda546-dadb-4d0b-90e6-dd55b9a32876")
+		(property "Reference" "#PWR066"
+			(at 213.36 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND1"
+			(at 213.36 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 213.36 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3d35804-e29e-4736-ab2e-dc47efa6336e")
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+12V")
 		(at 66.04 31.75 0)
 		(unit 1)
@@ -6592,84 +6525,6 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
 					(reference "#PWR046")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 213.36 127 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "66e0a990-624c-4409-b61f-53495bf020c6")
-		(property "Reference" "#PWR067"
-			(at 213.36 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 213.36 132.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 213.36 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 213.36 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 213.36 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c6e8511-8a66-4343-a961-3f99ad74b031")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
-					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -7849,84 +7704,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 190.5 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2d91d88-255c-40fc-b170-cfaac1e7733d")
-		(property "Reference" "#PWR066"
-			(at 190.5 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 190.5 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 190.5 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 190.5 87.63 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c202a356-647f-4416-be2f-0428707c0c1c")
-		)
-		(instances
-			(project "aquabox_final"
-				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
-					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_BJT:BC327")
 		(at 78.74 54.61 0)
 		(unit 1)
@@ -8610,6 +8387,84 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
 					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 213.36 87.63 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebee1058-725c-49e6-9aa2-5bca14d5067e")
+		(property "Reference" "#PWR067"
+			(at 213.36 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+12V"
+			(at 213.36 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 213.36 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d591544-4c28-404e-885b-75f15871e6fe")
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/ef4d3825-84ec-47ae-a142-b70e289b2098"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
