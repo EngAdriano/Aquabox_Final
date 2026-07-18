@@ -14,7 +14,7 @@
 	(lib_symbols)
 	(sheet
 		(at 64.77 93.98)
-		(size 30.48 15.24)
+		(size 33.02 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -59,7 +59,7 @@
 		)
 	)
 	(sheet
-		(at 193.04 93.98)
+		(at 191.77 110.49)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -75,7 +75,7 @@
 		)
 		(uuid "0e3d0365-eee5-4e08-8969-d2d62d095df5")
 		(property "Sheetname" "RTC_SD"
-			(at 193.04 93.2684 0)
+			(at 191.77 109.7784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -86,7 +86,7 @@
 			)
 		)
 		(property "Sheetfile" "rtc_sd.kicad_sch"
-			(at 193.04 109.8046 0)
+			(at 191.77 126.3146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -105,7 +105,7 @@
 		)
 	)
 	(sheet
-		(at 128.27 52.07)
+		(at 135.89 68.58)
 		(size 33.02 72.39)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -121,7 +121,7 @@
 		)
 		(uuid "38445a07-7dc1-4dfd-aa58-185ce46ba2bf")
 		(property "Sheetname" "ESP32_S3"
-			(at 128.27 51.3584 0)
+			(at 135.89 67.8684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -132,7 +132,7 @@
 			)
 		)
 		(property "Sheetfile" "esp32_s3.kicad_sch"
-			(at 128.27 125.0446 0)
+			(at 135.89 141.5546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -151,8 +151,8 @@
 		)
 	)
 	(sheet
-		(at 63.5 55.88)
-		(size 31.75 13.97)
+		(at 64.77 44.45)
+		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -167,7 +167,7 @@
 		)
 		(uuid "44a7b396-f10f-46a5-80f2-f6866e22a5c3")
 		(property "Sheetname" "Power"
-			(at 63.5 55.1684 0)
+			(at 64.77 43.7384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -178,7 +178,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 63.5 70.4346 0)
+			(at 64.77 60.2746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -197,7 +197,7 @@
 		)
 	)
 	(sheet
-		(at 191.77 58.42)
+		(at 189.23 45.72)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -213,7 +213,7 @@
 		)
 		(uuid "ef4d3825-84ec-47ae-a142-b70e289b2098")
 		(property "Sheetname" "Solenoids_Bomba"
-			(at 191.77 57.7084 0)
+			(at 189.23 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -224,7 +224,7 @@
 			)
 		)
 		(property "Sheetfile" "solenoids.kicad_sch"
-			(at 191.77 74.2446 0)
+			(at 189.23 61.5446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
