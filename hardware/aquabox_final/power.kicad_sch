@@ -3620,7 +3620,7 @@
 		(uuid "ffc013cc-e076-4aa3-b19a-34533f8ca778")
 	)
 	(hierarchical_label "R_NO"
-		(shape output)
+		(shape input)
 		(at 80.01 105.41 0)
 		(effects
 			(font
@@ -3631,7 +3631,7 @@
 		(uuid "94f8556e-b64e-4b21-9673-b8ed12059c21")
 	)
 	(hierarchical_label "R_C"
-		(shape input)
+		(shape output)
 		(at 93.98 113.03 0)
 		(effects
 			(font
