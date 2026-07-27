@@ -786,7 +786,7 @@
         "uuid": "c895ac8d-c639-4fea-ba83-739985d9c75e"
       }
     ],
-    "used_designators": "R49-54,J3,#PWR15-16,U15",
+    "used_designators": "J1-10,D1-11,BT1,#PWR1-74,K1,C1-9,RV1,F1,PS1,Q1-10,R1-54,U1-15",
     "variants": []
   },
   "sheets": [
@@ -809,10 +809,6 @@
     [
       "ef4d3825-84ec-47ae-a142-b70e289b2098",
       "Outputs"
-    ],
-    [
-      "0e3d0365-eee5-4e08-8969-d2d62d095df5",
-      "RTC_SD"
     ],
     [
       "6a1a24a6-7a05-4323-8d4e-6696d3969bdc",
