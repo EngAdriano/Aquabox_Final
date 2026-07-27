@@ -2264,6 +2264,12 @@
 		(uuid "84b35f17-d645-446e-b427-1f03ab6e162e")
 	)
 	(junction
+		(at 73.66 147.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "867969fe-72a5-4584-a1dc-d4f87fec37fc")
+	)
+	(junction
 		(at 80.01 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2299,6 +2305,12 @@
 		(color 0 0 0 0)
 		(uuid "efe13f6c-15b1-4e3d-a249-f9ce1023b8e7")
 	)
+	(junction
+		(at 73.66 175.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffe1355c-12b2-464a-964d-97ee85547472")
+	)
 	(wire
 		(pts
 			(xy 134.62 144.78) (xy 134.62 148.59)
@@ -2328,6 +2340,16 @@
 			(type default)
 		)
 		(uuid "066d4882-04b1-4871-b366-a9a87c70cd93")
+	)
+	(wire
+		(pts
+			(xy 82.55 175.26) (xy 73.66 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06dac705-858d-4a7b-b3ef-13c9cef4835c")
 	)
 	(wire
 		(pts
@@ -2381,6 +2403,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 147.32) (xy 73.66 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab562cf-712e-4c26-8535-1b70460bde95")
+	)
+	(wire
+		(pts
 			(xy 109.22 125.73) (xy 146.05 125.73)
 		)
 		(stroke
@@ -2431,7 +2463,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 173.99) (xy 73.66 177.8)
+			(xy 73.66 173.99) (xy 73.66 175.26)
 		)
 		(stroke
 			(width 0)
@@ -2591,6 +2623,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 157.48) (xy 82.55 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c08a8de-71cc-4ee7-a291-e3ac884f7141")
+	)
+	(wire
+		(pts
 			(xy 64.77 100.33) (xy 64.77 102.87)
 		)
 		(stroke
@@ -2681,7 +2723,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 144.78) (xy 73.66 148.59)
+			(xy 73.66 144.78) (xy 73.66 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2991,6 +3033,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 147.32) (xy 73.66 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad629b05-3799-4640-81d3-3ad43f373238")
+	)
+	(wire
+		(pts
 			(xy 59.69 43.18) (xy 59.69 45.72)
 		)
 		(stroke
@@ -3028,6 +3080,16 @@
 			(type default)
 		)
 		(uuid "b952c7f3-37cc-4a8a-9ef9-c2a7d50c6a7a")
+	)
+	(wire
+		(pts
+			(xy 82.55 165.1) (xy 82.55 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "babaf052-59f2-47b3-9766-5142bffaa8a9")
 	)
 	(wire
 		(pts
@@ -3108,6 +3170,16 @@
 			(type default)
 		)
 		(uuid "d417c2aa-30d0-4f33-9441-5f43a05073ae")
+	)
+	(wire
+		(pts
+			(xy 73.66 175.26) (xy 73.66 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d71ebecb-82dc-4e37-b966-aa4cf80f781f")
 	)
 	(wire
 		(pts
@@ -4159,6 +4231,88 @@
 			(project "aquabox_final"
 				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/6a1a24a6-7a05-4323-8d4e-6696d3969bdc"
 					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 82.55 161.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "503de1ac-e0cd-4ec9-bc71-24e12bf91876")
+		(property "Reference" "C10"
+			(at 86.36 160.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 86.36 162.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.5152 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 82.55 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "eef95b57-a70b-4d59-ae2c-ac4862838c6e")
+		)
+		(pin "1"
+			(uuid "f447e2bc-2f97-4c6d-a296-454a0642a7eb")
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e/6a1a24a6-7a05-4323-8d4e-6696d3969bdc"
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -5486,10 +5640,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9d106023-1c26-407f-b33c-64381c9ad0c2")
 		(property "Reference" "U15"
-			(at 80.01 160.0199 0)
+			(at 60.452 159.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5500,7 +5653,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 80.01 162.5599 0)
+			(at 60.452 161.544 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
