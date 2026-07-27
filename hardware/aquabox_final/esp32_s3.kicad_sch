@@ -1541,6 +1541,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 90.17) (xy 185.42 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3148516-6ca0-49c6-854b-a3d883dc7406")
+	)
+	(wire
+		(pts
 			(xy 175.26 110.49) (xy 185.42 110.49)
 		)
 		(stroke
@@ -1571,16 +1581,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 82.55) (xy 182.88 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c133fc22-d7c1-48e1-9d48-1f081549e7b8")
-	)
-	(wire
-		(pts
 			(xy 121.92 85.09) (xy 129.54 85.09)
 		)
 		(stroke
@@ -1588,16 +1588,6 @@
 			(type default)
 		)
 		(uuid "c955ca74-ac4a-46d5-a366-c9f16dbd74e0")
-	)
-	(wire
-		(pts
-			(xy 175.26 90.17) (xy 182.88 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d343a975-a551-481b-a1c1-48453a51a285")
 	)
 	(wire
 		(pts
@@ -1631,6 +1621,16 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 82.55) (xy 185.42 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f29e88d1-bb0b-4cd3-9fc0-1747e84e6100")
+	)
+	(wire
+		(pts
 			(xy 121.92 105.41) (xy 129.54 105.41)
 		)
 		(stroke
@@ -1648,54 +1648,6 @@
 			(type default)
 		)
 		(uuid "f97f7d19-e91e-4a0f-9ca4-efc7a5585eb8")
-	)
-	(global_label "BOMBA_ON_OFF"
-		(shape input)
-		(at 182.88 82.55 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "707af278-68cb-46ea-a85a-768b5d12b767")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 200.3796 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "MAN_AUTO"
-		(shape input)
-		(at 182.88 90.17 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9e5d74de-1f6c-40ee-a974-e2e93d78c037")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 195.7834 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
@@ -1895,6 +1847,17 @@
 		)
 		(uuid "9314d71a-a453-472c-b3b2-92bc7a0b1c67")
 	)
+	(hierarchical_label "BOMBA_ON_OFF"
+		(shape input)
+		(at 185.42 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98fedd2f-146c-4775-922e-21175dbdf2e0")
+	)
 	(hierarchical_label "TFT_DC"
 		(shape output)
 		(at 121.92 95.25 180)
@@ -1938,6 +1901,17 @@
 			(justify right)
 		)
 		(uuid "cc5d3380-5601-4da1-bb3b-d722a1a3f3f8")
+	)
+	(hierarchical_label "MAN_AUTO"
+		(shape input)
+		(at 185.42 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d432b927-f366-4457-b1da-de78cab15b25")
 	)
 	(hierarchical_label "BTN_DOWN"
 		(shape output)
