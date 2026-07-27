@@ -33,7 +33,7 @@
 		(uuid "e2466936-e1b9-46b9-8df0-b3a4042f23f1")
 	)
 	(sheet
-		(at 64.77 93.98)
+		(at 64.77 74.93)
 		(size 33.02 15.24)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -49,7 +49,7 @@
 		)
 		(uuid "0b63a039-e53a-49f8-ad12-ae88526dbeca")
 		(property "Sheetname" "Inputs"
-			(at 64.77 93.2684 0)
+			(at 64.77 74.2184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -60,7 +60,7 @@
 			)
 		)
 		(property "Sheetfile" "inputs.kicad_sch"
-			(at 64.77 109.8046 0)
+			(at 64.77 90.7546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -237,6 +237,52 @@
 		)
 	)
 	(sheet
+		(at 66.04 109.22)
+		(size 33.02 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6a1a24a6-7a05-4323-8d4e-6696d3969bdc")
+		(property "Sheetname" "Interfaces"
+			(at 66.04 108.5084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Interfaces.kicad_sch"
+			(at 66.04 130.1246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "aquabox_final"
+				(path "/c895ac8d-c639-4fea-ba83-739985d9c75e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 201.93 44.45)
 		(size 31.75 15.24)
 		(exclude_from_sim no)
@@ -252,7 +298,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "ef4d3825-84ec-47ae-a142-b70e289b2098")
-		(property "Sheetname" "Solenoids_Bomba"
+		(property "Sheetname" "Outputs"
 			(at 201.93 43.7384 0)
 			(show_name no)
 			(do_not_autoplace no)

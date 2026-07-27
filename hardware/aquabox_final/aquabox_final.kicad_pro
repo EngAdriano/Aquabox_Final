@@ -786,7 +786,7 @@
         "uuid": "c895ac8d-c639-4fea-ba83-739985d9c75e"
       }
     ],
-    "used_designators": "",
+    "used_designators": "D12-18,#PWR8-12,#PWR15-19,#PWR72-97,C3-8,C10-13,J3,J9-12,R4-10,R49-73,U15-21,SW1-4",
     "variants": []
   },
   "sheets": [
@@ -808,11 +808,15 @@
     ],
     [
       "ef4d3825-84ec-47ae-a142-b70e289b2098",
-      "Solenoids_Bomba"
+      "Outputs"
     ],
     [
       "0e3d0365-eee5-4e08-8969-d2d62d095df5",
       "RTC_SD"
+    ],
+    [
+      "6a1a24a6-7a05-4323-8d4e-6696d3969bdc",
+      "Interfaces"
     ]
   ],
   "text_variables": {},

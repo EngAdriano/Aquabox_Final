@@ -1182,16 +1182,16 @@
 		(uuid "108c99db-5529-4d9b-89d2-6b2796823476")
 	)
 	(junction
+		(at 121.92 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "291a64a3-5c9b-4e47-a475-f14824b9e2ad")
+	)
+	(junction
 		(at 173.99 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43938e01-e9f8-4da5-ba4e-de9efa4afe6b")
-	)
-	(junction
-		(at 130.81 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9682051a-4ceb-48f9-8d0d-8ef5bb5d13b5")
 	)
 	(junction
 		(at 130.81 71.12)
@@ -1200,10 +1200,10 @@
 		(uuid "be9537ff-fea1-4f0f-83d3-6baf1d22b71c")
 	)
 	(junction
-		(at 121.92 92.71)
+		(at 130.81 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cf4ce221-b596-475c-a24b-0bef98446263")
+		(uuid "fc825b0d-4505-4799-8058-ae5e75f9af83")
 	)
 	(no_connect
 		(at 137.16 100.33)
@@ -1255,26 +1255,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 81.28) (xy 130.81 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36305f95-0864-40dd-a9ce-c3341fbcab6f")
-	)
-	(wire
-		(pts
-			(xy 121.92 92.71) (xy 137.16 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "391ee85c-f468-4262-931e-a5f0b49961a5")
-	)
-	(wire
-		(pts
 			(xy 173.99 82.55) (xy 173.99 93.98)
 		)
 		(stroke
@@ -1315,23 +1295,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 81.28) (xy 121.92 92.71)
+			(xy 130.81 92.71) (xy 137.16 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6cef0210-8432-4fcb-a604-0c2fd1af21e9")
-	)
-	(wire
-		(pts
-			(xy 130.81 90.17) (xy 137.16 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76cd3ead-7d6e-416e-9dd1-dc5d00fab262")
+		(uuid "79190aeb-5d7c-433a-b2d9-f095342ed34f")
 	)
 	(wire
 		(pts
@@ -1365,6 +1335,26 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 92.71) (xy 130.81 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93d3d694-d7c9-48a1-bb51-a6b37dfc8467")
+	)
+	(wire
+		(pts
+			(xy 107.95 90.17) (xy 121.92 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9479b91a-c91b-4d38-be6c-adc0bd1f84a9")
+	)
+	(wire
+		(pts
 			(xy 130.81 71.12) (xy 130.81 73.66)
 		)
 		(stroke
@@ -1372,16 +1362,6 @@
 			(type default)
 		)
 		(uuid "9e5ff08a-1f11-4b7d-84ac-c2c189cf1d12")
-	)
-	(wire
-		(pts
-			(xy 102.87 92.71) (xy 121.92 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a17d5228-199e-43b9-88e9-5c7be333fa27")
 	)
 	(wire
 		(pts
@@ -1415,6 +1395,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 81.28) (xy 121.92 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca2b0913-4305-4505-9bce-c1df443f984d")
+	)
+	(wire
+		(pts
+			(xy 121.92 90.17) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6a94b1-76bd-4619-9203-898ebd4ff1ee")
+	)
+	(wire
+		(pts
 			(xy 165.1 71.12) (xy 165.1 73.66)
 		)
 		(stroke
@@ -1435,13 +1435,13 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 90.17) (xy 130.81 90.17)
+			(xy 130.81 81.28) (xy 130.81 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eeb8b6bc-fc4c-49dc-b263-d990a58ce26c")
+		(uuid "efeadfb7-7136-4a94-9355-0164f7801c75")
 	)
 	(wire
 		(pts
@@ -1453,53 +1453,27 @@
 		)
 		(uuid "fa405592-c315-4839-970e-f35ec01f14b0")
 	)
-	(global_label "I2C_SDA"
+	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
-		(at 102.87 92.71 180)
-		(fields_autoplaced yes)
+		(at 107.95 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "189cfa3c-f020-4bf8-bc76-92b78948750a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.1535 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "c0e50083-66c2-43dd-ac4b-d4451ae2f2db")
 	)
-	(global_label "I2C_SCL"
+	(hierarchical_label "I2C_SCL"
 		(shape input)
-		(at 102.87 90.17 180)
-		(fields_autoplaced yes)
+		(at 107.95 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3f6ac1a0-fc3e-4db8-af4e-692c3ed0feda")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.3253 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "fdb42b59-4f3a-4e5e-b759-de3e65d02320")
 	)
 	(symbol
 		(lib_id "power:+3.3V")

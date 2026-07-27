@@ -1446,62 +1446,62 @@
 	)
 	(text "GND_+12V"
 		(exclude_from_sim no)
-		(at 260.858 131.064 0)
+		(at 41.148 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "05e74e42-5832-4c69-9e51-f28f870f7832")
 	)
 	(text "T1_LOW"
 		(exclude_from_sim no)
-		(at 260.858 120.904 0)
+		(at 41.148 128.524 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "3978f157-05e9-424b-8fa9-4b58121c21db")
 	)
 	(text "T3_HIGH"
 		(exclude_from_sim no)
-		(at 260.858 148.844 0)
+		(at 41.402 156.464 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "4c9ec266-604e-45a9-a4dd-59761fb17e5c")
 	)
 	(text "GND_+12V"
 		(exclude_from_sim no)
-		(at 260.858 118.364 0)
+		(at 41.148 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "55d1a05c-a832-4ae3-9b0a-7331e0f8d100")
 	)
 	(text "T2_HIGH"
 		(exclude_from_sim no)
-		(at 261.112 135.89 0)
+		(at 41.148 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "5d1d6467-4365-478f-80e3-8b0ed7f5da25")
 	)
 	(text "OUT_+12V"
 		(exclude_from_sim no)
-		(at 55.118 143.764 0)
+		(at 128.778 139.954 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1512,29 +1512,29 @@
 	)
 	(text "GND_+12V"
 		(exclude_from_sim no)
-		(at 260.604 143.764 0)
+		(at 41.402 159.004 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "859985cb-a880-44ac-aee0-b7af403fed05")
 	)
 	(text "T3_LOW"
 		(exclude_from_sim no)
-		(at 260.858 146.304 0)
+		(at 41.402 153.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8c9a24b6-07b4-4796-85fe-8c74c0fa590f")
 	)
 	(text "GND_+12V"
 		(exclude_from_sim no)
-		(at 55.118 148.844 0)
+		(at 128.778 145.034 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1545,29 +1545,29 @@
 	)
 	(text "T2_LOW"
 		(exclude_from_sim no)
-		(at 261.112 133.35 0)
+		(at 41.148 140.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "ae2cd444-e03b-4211-8c19-83d1d37e28b0")
 	)
 	(text "T1_HIGH"
 		(exclude_from_sim no)
-		(at 260.858 123.444 0)
+		(at 41.148 131.064 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b0b13c92-0c38-4cfe-a440-93a8eea13c6a")
 	)
 	(text "SIGNAL"
 		(exclude_from_sim no)
-		(at 55.118 146.304 0)
+		(at 128.778 142.494 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1577,22 +1577,16 @@
 		(uuid "c2999056-3dc5-4ed1-8e05-06344f5f6732")
 	)
 	(junction
+		(at 246.38 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "040cdb45-6e62-4532-9f21-8b39773e8e99")
+	)
+	(junction
 		(at 220.98 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "05536ef3-fd5f-433a-bc0a-a74d62541de1")
-	)
-	(junction
-		(at 246.38 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0849dec9-5011-41a8-ba69-95b9c08c96df")
-	)
-	(junction
-		(at 73.66 48.26)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08caad3f-34a8-42c5-b3b4-9431c3d1ec23")
 	)
 	(junction
 		(at 40.64 55.88)
@@ -1613,10 +1607,16 @@
 		(uuid "1ce68d7f-51c3-4557-9c8c-d7152a7c07dd")
 	)
 	(junction
-		(at 160.02 93.98)
+		(at 247.65 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "305225d5-ebdf-47d5-b325-fb9a66319bc7")
+		(uuid "2d1dd7ce-dd1f-4248-9396-1db61b1f3732")
+	)
+	(junction
+		(at 50.8 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3267a743-b90b-4087-b60b-5b797edb675c")
 	)
 	(junction
 		(at 134.62 77.47)
@@ -1625,16 +1625,16 @@
 		(uuid "38082c98-5391-4530-ace4-1d081daf2aa6")
 	)
 	(junction
-		(at 160.02 138.43)
+		(at 160.02 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3b258449-afa9-4437-9765-76f5994e10e5")
+		(uuid "3d3abb78-d612-4f2c-b49a-6c7cd3902e82")
 	)
 	(junction
-		(at 251.46 143.51)
+		(at 50.8 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "41055803-c6d1-41a6-83de-1da2caa7f63a")
+		(uuid "4c04c411-546d-42d6-a2d9-d884693f394f")
 	)
 	(junction
 		(at 40.64 102.87)
@@ -1643,10 +1643,16 @@
 		(uuid "4e77ed5e-ed3a-4834-bc1a-be2765995642")
 	)
 	(junction
-		(at 160.02 46.99)
+		(at 73.66 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5caa323e-25aa-449b-a653-3246db12522b")
+		(uuid "5b140536-fdb9-45f8-9805-3afceb241f88")
+	)
+	(junction
+		(at 73.66 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fb4c946-ffe9-4cd1-b751-ff8c8f784d8c")
 	)
 	(junction
 		(at 213.36 54.61)
@@ -1661,12 +1667,6 @@
 		(uuid "84bfa605-d1c8-45c1-b157-3bacb0578fe1")
 	)
 	(junction
-		(at 251.46 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "92ceeee3-ff76-43d9-b15e-1f915b8aa5e3")
-	)
-	(junction
 		(at 48.26 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1679,22 +1679,22 @@
 		(uuid "9f33b60e-cf89-4ecc-b0bc-642c9d58e74e")
 	)
 	(junction
-		(at 127 146.05)
+		(at 214.63 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a67ff1b4-6f78-42c4-9b36-3cf0643df6fa")
 	)
 	(junction
-		(at 73.66 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba733eff-3cc3-45d9-806a-9256637414ee")
-	)
-	(junction
-		(at 134.62 121.92)
+		(at 222.25 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbc19456-2ccf-47d1-adbc-d6a80c1482a6")
+	)
+	(junction
+		(at 246.38 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd5c9da4-283a-4252-9c42-f30ba0216c3a")
 	)
 	(junction
 		(at 213.36 101.6)
@@ -1709,20 +1709,20 @@
 		(uuid "c8375031-be85-42b0-93ea-ede5e22b67da")
 	)
 	(junction
-		(at 246.38 93.98)
+		(at 160.02 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "cb8ce65a-1806-417a-bb29-da1d9f655408")
+		(uuid "e3d82fb1-6ece-4e30-9893-f27fbb5a3775")
 	)
 	(wire
 		(pts
-			(xy 251.46 130.81) (xy 254 130.81)
+			(xy 48.26 146.05) (xy 50.8 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "017d0786-dfe0-4269-852c-7f32b0ac8091")
+		(uuid "02059577-57d3-4ebf-86bf-17a28eb6307c")
 	)
 	(wire
 		(pts
@@ -1746,13 +1746,13 @@
 	)
 	(wire
 		(pts
-			(xy 254 118.11) (xy 251.46 118.11)
+			(xy 160.02 93.98) (xy 165.1 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "03a5408e-b0c4-47e3-a8c6-95cd11053d70")
+		(uuid "03880334-3e02-47fb-a6d0-52cd2f8546a0")
 	)
 	(wire
 		(pts
@@ -1786,7 +1786,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 143.51) (xy 127 146.05)
+			(xy 214.63 147.32) (xy 214.63 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1806,7 +1806,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 146.05) (xy 127 146.05)
+			(xy 209.55 149.86) (xy 214.63 149.86)
 		)
 		(stroke
 			(width 0)
@@ -1833,16 +1833,6 @@
 			(type default)
 		)
 		(uuid "18551af3-e372-4674-a9eb-46fec7354149")
-	)
-	(wire
-		(pts
-			(xy 251.46 143.51) (xy 251.46 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "194dc19b-6cec-4a00-9afc-6c9d0d5c52e8")
 	)
 	(wire
 		(pts
@@ -1873,16 +1863,6 @@
 			(type default)
 		)
 		(uuid "1ef53789-957b-4932-9c5b-01bb47801bb7")
-	)
-	(wire
-		(pts
-			(xy 247.65 148.59) (xy 254 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f0783d8-6733-44d8-8294-9c0f434fe693")
 	)
 	(wire
 		(pts
@@ -1926,13 +1906,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 121.92) (xy 134.62 125.73)
+			(xy 222.25 125.73) (xy 222.25 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24be0e93-6520-424e-b6df-c045711d8a6f")
+	)
+	(wire
+		(pts
+			(xy 50.8 162.56) (xy 50.8 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25108508-71a6-4eaf-abb8-897019579ac5")
 	)
 	(wire
 		(pts
@@ -1946,7 +1936,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 143.51) (xy 139.7 143.51)
+			(xy 222.25 147.32) (xy 227.33 147.32)
 		)
 		(stroke
 			(width 0)
@@ -1973,6 +1963,16 @@
 			(type default)
 		)
 		(uuid "2795490e-5582-484b-b5b4-51835b373ef7")
+	)
+	(wire
+		(pts
+			(xy 50.8 158.75) (xy 50.8 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2895d9e2-6df5-4a53-97b1-c97ebd615b87")
 	)
 	(wire
 		(pts
@@ -2006,13 +2006,33 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 127 135.89)
+			(xy 48.26 140.97) (xy 54.61 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c08c249-77e6-45de-bfdd-5bb0c2ca0ac4")
+	)
+	(wire
+		(pts
+			(xy 214.63 137.16) (xy 214.63 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2da45f46-6feb-4e5f-ba4b-e869e8cb2a2e")
+	)
+	(wire
+		(pts
+			(xy 50.8 146.05) (xy 50.8 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd938e7-facb-4cb7-a4ed-ed859ac63ae1")
 	)
 	(wire
 		(pts
@@ -2046,33 +2066,13 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 118.11) (xy 251.46 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "385c135c-8e55-4e17-a888-ccb25d41b540")
-	)
-	(wire
-		(pts
-			(xy 127 125.73) (xy 127 121.92)
+			(xy 214.63 129.54) (xy 214.63 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "38f564a4-3669-4bef-8f5b-615ab64457d8")
-	)
-	(wire
-		(pts
-			(xy 247.65 135.89) (xy 254 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a45326f-fbbe-40e6-9b9a-468dea79329c")
 	)
 	(wire
 		(pts
@@ -2086,7 +2086,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 143.51) (xy 160.02 143.51)
+			(xy 242.57 147.32) (xy 247.65 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2113,6 +2113,16 @@
 			(type default)
 		)
 		(uuid "41412f56-7a2e-411c-8c59-1c39db8ffb68")
+	)
+	(wire
+		(pts
+			(xy 246.38 46.99) (xy 251.46 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "417e8f9b-4114-4a36-8430-a452f04f7081")
 	)
 	(wire
 		(pts
@@ -2176,7 +2186,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 148.59) (xy 66.04 154.94)
+			(xy 139.7 144.78) (xy 139.7 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2216,16 +2226,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 46.99) (xy 166.37 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54db5718-4252-4a9a-a84f-a99cd7439b35")
-	)
-	(wire
-		(pts
 			(xy 213.36 30.48) (xy 220.98 30.48)
 		)
 		(stroke
@@ -2233,16 +2233,6 @@
 			(type default)
 		)
 		(uuid "5638ea95-4a08-4fe0-9eb4-06a2232df108")
-	)
-	(wire
-		(pts
-			(xy 160.02 93.98) (xy 166.37 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a72b0cc-145d-4698-9c5d-d696dbe3295d")
 	)
 	(wire
 		(pts
@@ -2266,6 +2256,16 @@
 	)
 	(wire
 		(pts
+			(xy 247.65 142.24) (xy 255.27 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b2b664b-ecaf-40ed-81dc-e851aa8f890f")
+	)
+	(wire
+		(pts
 			(xy 241.3 52.07) (xy 246.38 52.07)
 		)
 		(stroke
@@ -2286,7 +2286,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 138.43) (xy 139.7 138.43)
+			(xy 222.25 142.24) (xy 227.33 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2306,7 +2306,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 143.51) (xy 62.23 143.51)
+			(xy 139.7 139.7) (xy 135.89 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2356,6 +2356,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 95.25) (xy 77.47 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e00b0a8-8e83-4a8b-85a4-2ee6a90d628f")
+	)
+	(wire
+		(pts
 			(xy 160.02 41.91) (xy 160.02 46.99)
 		)
 		(stroke
@@ -2396,17 +2406,37 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 120.65) (xy 254 120.65)
+			(xy 48.26 158.75) (xy 50.8 158.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "722aef83-86cf-4050-92c7-7ec3a65d2938")
+		(uuid "71e5f354-de3a-459e-a5c9-9a5bb6bda52c")
 	)
 	(wire
 		(pts
-			(xy 62.23 148.59) (xy 66.04 148.59)
+			(xy 48.26 143.51) (xy 54.61 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73f9ea1f-f0d8-4bf2-8a18-7cd602ff9f1c")
+	)
+	(wire
+		(pts
+			(xy 246.38 93.98) (xy 251.46 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9bd2fa-936b-450d-b49a-aa8c36e449ce")
+	)
+	(wire
+		(pts
+			(xy 135.89 144.78) (xy 139.7 144.78)
 		)
 		(stroke
 			(width 0)
@@ -2433,16 +2463,6 @@
 			(type default)
 		)
 		(uuid "7e4a166f-9771-440f-8d9c-c4bb8daf4155")
-	)
-	(wire
-		(pts
-			(xy 247.65 133.35) (xy 254 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80943f7c-ffd7-4294-b70e-b9ade6dd31f2")
 	)
 	(wire
 		(pts
@@ -2496,16 +2516,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 138.43) (xy 166.37 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88dca482-2fca-4d14-af72-225aaa8deb57")
-	)
-	(wire
-		(pts
 			(xy 134.62 88.9) (xy 134.62 93.98)
 		)
 		(stroke
@@ -2526,17 +2536,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 46.99) (xy 252.73 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d0a1c54-67ce-4f15-85de-971c2d10f0a8")
-	)
-	(wire
-		(pts
-			(xy 134.62 133.35) (xy 134.62 138.43)
+			(xy 222.25 137.16) (xy 222.25 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2556,7 +2556,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 146.05) (xy 134.62 143.51)
+			(xy 222.25 149.86) (xy 222.25 147.32)
 		)
 		(stroke
 			(width 0)
@@ -2596,7 +2596,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 133.35) (xy 160.02 138.43)
+			(xy 247.65 137.16) (xy 247.65 142.24)
 		)
 		(stroke
 			(width 0)
@@ -2616,6 +2616,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 153.67) (xy 54.61 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e774fa-d373-49d8-9cac-36f31c7f8aa1")
+	)
+	(wire
+		(pts
 			(xy 220.98 88.9) (xy 220.98 93.98)
 		)
 		(stroke
@@ -2626,7 +2636,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 119.38) (xy 134.62 121.92)
+			(xy 222.25 123.19) (xy 222.25 125.73)
 		)
 		(stroke
 			(width 0)
@@ -2643,6 +2653,16 @@
 			(type default)
 		)
 		(uuid "a0a1538c-e2df-4769-a6d7-a3006814ccee")
+	)
+	(wire
+		(pts
+			(xy 73.66 48.26) (xy 78.74 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a10b1ae4-c34e-4412-a6cf-68a83c5af81c")
 	)
 	(wire
 		(pts
@@ -2666,7 +2686,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 138.43) (xy 66.04 143.51)
+			(xy 139.7 134.62) (xy 139.7 139.7)
 		)
 		(stroke
 			(width 0)
@@ -2676,7 +2696,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 143.51) (xy 160.02 147.32)
+			(xy 247.65 147.32) (xy 247.65 151.13)
 		)
 		(stroke
 			(width 0)
@@ -2766,16 +2786,6 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 93.98) (xy 252.73 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6b4a365-2a08-4b3b-af97-fb55ab22cc5d")
-	)
-	(wire
-		(pts
 			(xy 40.64 100.33) (xy 40.64 102.87)
 		)
 		(stroke
@@ -2856,6 +2866,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 128.27) (xy 54.61 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cea227b0-52cd-4454-8e66-388e9bd7b4f4")
+	)
+	(wire
+		(pts
 			(xy 48.26 43.18) (xy 48.26 48.26)
 		)
 		(stroke
@@ -2863,26 +2883,6 @@
 			(type default)
 		)
 		(uuid "cfc960b6-2123-4dbb-b12e-32e8e2d31a1a")
-	)
-	(wire
-		(pts
-			(xy 247.65 146.05) (xy 254 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0b3343d-f886-46a9-8b9d-0eefa0414e86")
-	)
-	(wire
-		(pts
-			(xy 251.46 143.51) (xy 254 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4b6a68d-7eeb-4296-bbf0-33b481626602")
 	)
 	(wire
 		(pts
@@ -2903,6 +2903,16 @@
 			(type default)
 		)
 		(uuid "d7f6656b-d53a-498e-b4b7-8cc7b4fce777")
+	)
+	(wire
+		(pts
+			(xy 48.26 130.81) (xy 54.61 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82febb0-40cd-470e-9e4b-0ec1fc658fdb")
 	)
 	(wire
 		(pts
@@ -2946,23 +2956,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 146.05) (xy 134.62 146.05)
+			(xy 214.63 149.86) (xy 222.25 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df6bf975-9d0a-4bde-a65e-6138db15a338")
-	)
-	(wire
-		(pts
-			(xy 247.65 123.19) (xy 254 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0c40dad-0a89-47f3-bf40-8f3ff30d4891")
 	)
 	(wire
 		(pts
@@ -2986,16 +2986,6 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 95.25) (xy 80.01 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2fa4e8f-e496-4173-8e57-0f9d7c3f235b")
-	)
-	(wire
-		(pts
 			(xy 220.98 46.99) (xy 226.06 46.99)
 		)
 		(stroke
@@ -3016,13 +3006,23 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 138.43) (xy 160.02 138.43)
+			(xy 242.57 142.24) (xy 247.65 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e4d6903b-d188-4530-8152-506d01e5d56b")
+	)
+	(wire
+		(pts
+			(xy 50.8 133.35) (xy 48.26 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5435a9d-e147-42b8-bf6f-8cf91d6d598d")
 	)
 	(wire
 		(pts
@@ -3066,17 +3066,17 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 130.81) (xy 251.46 143.51)
+			(xy 160.02 46.99) (xy 165.1 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9ded3d0-bf9a-447a-aa14-e637ba671698")
+		(uuid "ea4503cb-a834-4dc4-8526-36141d9a465e")
 	)
 	(wire
 		(pts
-			(xy 68.58 146.05) (xy 62.23 146.05)
+			(xy 142.24 142.24) (xy 135.89 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3086,23 +3086,23 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 119.38) (xy 160.02 125.73)
+			(xy 48.26 156.21) (xy 54.61 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8392d9f-f8e7-43b5-be3d-df27e35fd715")
+	)
+	(wire
+		(pts
+			(xy 247.65 123.19) (xy 247.65 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fc641f94-4cf1-49fd-9244-4d3838ae6f13")
-	)
-	(wire
-		(pts
-			(xy 73.66 48.26) (xy 80.01 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc858ce9-3c50-42a2-9e82-9460718a0854")
 	)
 	(wire
 		(pts
@@ -3126,7 +3126,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 121.92) (xy 134.62 121.92)
+			(xy 214.63 125.73) (xy 222.25 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3146,17 +3146,17 @@
 	)
 	(global_label "SENSOR_L3"
 		(shape output)
-		(at 247.65 146.05 180)
+		(at 54.61 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "42bdc491-96dc-4287-90ba-10c3082cdccb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.9606 146.05 0)
+			(at 68.2994 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3164,23 +3164,23 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
 	(global_label "SENSOR_H3"
 		(shape output)
-		(at 247.65 148.59 180)
+		(at 54.61 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "441d169a-444b-4350-b3db-423c4291531b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.6582 148.59 0)
+			(at 68.6018 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3188,7 +3188,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 	)
@@ -3213,30 +3213,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "T2_LOW"
-		(shape output)
-		(at 166.37 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "52bbb7b7-7501-4016-82fc-ccb5458d5746")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.7527 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -3288,30 +3264,6 @@
 			)
 		)
 	)
-	(global_label "T3_HIGH"
-		(shape output)
-		(at 252.73 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6ecbe06b-78a2-4f57-950f-0861650c04eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.8385 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "SENSOR_H1"
 		(shape input)
 		(at 35.56 102.87 180)
@@ -3338,55 +3290,7 @@
 	)
 	(global_label "SENSOR_H1"
 		(shape output)
-		(at 247.65 123.19 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8c36aad4-7d08-43b0-9273-5d268675e2ff")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.6582 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "SENSOR_L1"
-		(shape output)
-		(at 247.65 120.65 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8dcbc6e0-f895-4c71-9a40-833975a0838b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.9606 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "FLOW_COUNTER"
-		(shape output)
-		(at 166.37 138.43 0)
+		(at 54.61 130.81 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3394,9 +3298,33 @@
 			)
 			(justify left)
 		)
-		(uuid "9166581a-5154-48d5-9873-a9306146f327")
+		(uuid "8c36aad4-7d08-43b0-9273-5d268675e2ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.8695 138.43 0)
+			(at 68.6018 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "SENSOR_L1"
+		(shape output)
+		(at 54.61 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8dcbc6e0-f895-4c71-9a40-833975a0838b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.2994 128.27 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3410,7 +3338,7 @@
 	)
 	(global_label "FLOW_SENSOR"
 		(shape output)
-		(at 68.58 146.05 0)
+		(at 142.24 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3420,7 +3348,7 @@
 		)
 		(uuid "956b5e2f-9993-4d4a-9f69-d9d117515084")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 84.9304 146.05 0)
+			(at 158.5904 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3434,7 +3362,7 @@
 	)
 	(global_label "FLOW_SENSOR"
 		(shape input)
-		(at 121.92 146.05 180)
+		(at 209.55 149.86 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3444,7 +3372,7 @@
 		)
 		(uuid "9b032f92-94c2-4e00-9c9a-a0eac2a98da2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.5696 146.05 0)
+			(at 193.1996 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3453,30 +3381,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "T3_LOW"
-		(shape output)
-		(at 252.73 46.99 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a72648e9-e2b1-4a91-8dce-3f9bb61b38a8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.1127 46.99 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
@@ -3504,30 +3408,6 @@
 			)
 		)
 	)
-	(global_label "T1_HIGH"
-		(shape output)
-		(at 80.01 95.25 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c8a926d5-ffbf-4fd5-a13e-8cf028fed196")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.1185 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
 	(global_label "SENSOR_L3"
 		(shape input)
 		(at 208.28 54.61 180)
@@ -3552,67 +3432,19 @@
 			)
 		)
 	)
-	(global_label "T1_LOW"
+	(global_label "SENSOR_H2"
 		(shape output)
-		(at 80.01 48.26 0)
+		(at 54.61 143.51 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
-		)
-		(uuid "d6e29761-60e8-45ac-86ef-7cd632cb53ed")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 95.3927 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "SENSOR_H2"
-		(shape output)
-		(at 247.65 135.89 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
 		)
 		(uuid "f32c0cab-d6b0-4588-8c27-771175134592")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.6582 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "T2_HIGH"
-		(shape output)
-		(at 166.37 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f6013a93-fb2c-47e5-8525-62c84615055e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 182.4785 93.98 0)
+			(at 68.6018 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3626,17 +3458,17 @@
 	)
 	(global_label "SENSOR_L2"
 		(shape output)
-		(at 247.65 133.35 180)
+		(at 54.61 140.97 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "faf867eb-a431-444e-8e2a-92cc00b10ac4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 233.9606 133.35 0)
+			(at 68.2994 140.97 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3644,9 +3476,86 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
+	)
+	(hierarchical_label "S1_HIGH"
+		(shape output)
+		(at 77.47 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0055d001-3217-4f3c-9f60-5c7a222a0c15")
+	)
+	(hierarchical_label "S2_HIGH"
+		(shape output)
+		(at 165.1 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03efb8cc-d5d4-4065-a6a5-63c235e70926")
+	)
+	(hierarchical_label "S3_HIGH"
+		(shape output)
+		(at 251.46 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b70e0dd-8979-41f6-8d8c-5d5585a5f7ec")
+	)
+	(hierarchical_label "S1_LOW"
+		(shape output)
+		(at 78.74 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c9ed43c-b972-4f6e-aa7a-29baa0756214")
+	)
+	(hierarchical_label "FLOW_COUNTER"
+		(shape output)
+		(at 255.27 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2d2657c5-7781-482c-abc6-1c68db2a7cc6")
+	)
+	(hierarchical_label "S3_LOW"
+		(shape output)
+		(at 251.46 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7284870a-cca5-4bed-847e-13386320a14f")
+	)
+	(hierarchical_label "S2_LOW"
+		(shape output)
+		(at 165.1 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92a4fea8-1c12-4869-a156-dea550068a30")
 	)
 	(symbol
 		(lib_id "Device:LED")
@@ -3727,10 +3636,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c61e7d67-fb78-4e3a-a8d8-2199165d9a2b")
+			(uuid "6058b4ea-57fa-4f1d-906c-f5dd80da3713")
 		)
 		(pin "2"
-			(uuid "40be38a8-9d7c-43e8-b769-7d47ac68acf1")
+			(uuid "e8252bd3-474f-4b91-ac29-cc1c372e1fdb")
 		)
 		(instances
 			(project "aquabox_final"
@@ -3808,7 +3717,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "02754c5d-479f-4f30-a192-6d45e5db3304")
+			(uuid "28968cb3-238f-45cf-a848-3f31634d118c")
 		)
 		(instances
 			(project "aquabox_final"
@@ -3821,7 +3730,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 134.62 129.54 0)
+		(at 222.25 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3832,7 +3741,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c84476b-5a01-4746-bb43-83f004a733e9")
 		(property "Reference" "R21"
-			(at 137.16 128.2699 0)
+			(at 224.79 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3843,7 +3752,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 137.16 130.8099 0)
+			(at 224.79 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3854,7 +3763,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.842 129.54 90)
+			(at 220.472 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3865,7 +3774,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 129.54 0)
+			(at 222.25 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3876,7 +3785,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 134.62 129.54 0)
+			(at 222.25 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3887,10 +3796,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5718757b-d167-49ce-939d-e9044ba94ce6")
+			(uuid "2d95f9db-f64d-4b79-91b3-b6a724a1f4ee")
 		)
 		(pin "2"
-			(uuid "897057b6-e309-4484-96c9-f07b30f383e4")
+			(uuid "5c261abe-88fd-4d4b-87c9-1e5cbe3fc3ce")
 		)
 		(instances
 			(project "aquabox_final"
@@ -3969,10 +3878,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "53b89ddf-d257-46b6-9c67-f03752fb9d8d")
+			(uuid "d157de96-7e4f-4e97-bd2a-b0fca5276d59")
 		)
 		(pin "2"
-			(uuid "7d9d3490-2a7b-4480-9e20-ac0aadab4bb3")
+			(uuid "033fb5bb-1bb8-4470-97cf-85bcc5dfec34")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4052,16 +3961,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "214d6f72-0982-409f-829c-5473ffd0d7ea")
+			(uuid "933fc929-29f4-441b-b3c3-0c0c78cb483e")
 		)
 		(pin "2"
-			(uuid "d5e5472e-856d-4a4c-a70e-93f9d7689cc0")
+			(uuid "d230d715-4751-463a-a46b-04e6862e5e15")
 		)
 		(pin "3"
-			(uuid "defb98a7-a2e4-4b5f-b229-e6964ae4fc8b")
+			(uuid "f73887c0-3b4f-435b-baa2-817be5e24a57")
 		)
 		(pin "1"
-			(uuid "afcf3ade-d8c7-4b23-ba83-49513aab8227")
+			(uuid "0013acf6-58d0-4838-bcb5-7b6405a5ad45")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4140,10 +4049,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "99b43154-2a7b-4382-9be1-299f1ab927c1")
+			(uuid "4bdd9058-43b8-4382-b8b7-9bb86c1b9f8c")
 		)
 		(pin "2"
-			(uuid "e1a74e31-70e6-44bc-956d-4d45410e0104")
+			(uuid "0f39e916-3f54-4fd7-ab7d-081e2133608c")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4221,7 +4130,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "6051106a-ffff-4be7-b553-ffad8adb91d9")
+			(uuid "2d546ef6-626d-4bc4-9c7c-f7db15248526")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4299,7 +4208,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "fe1ab059-a46d-4f7d-ab0f-d60409f4150e")
+			(uuid "c2b210d7-20a5-4674-b560-2858448a0555")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4377,7 +4286,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4167dae6-715c-439e-b8a0-8436d90325a8")
+			(uuid "3f7fc37a-87cc-45dc-8b1f-8563222d2fe0")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4456,10 +4365,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c8adb1b-48a9-4f6d-bee5-eb7c29b9c849")
+			(uuid "75da7666-8f68-459a-bbe9-706d5b221dd3")
 		)
 		(pin "2"
-			(uuid "2380e445-c3fa-4319-9008-75997d723705")
+			(uuid "80a10034-e374-4c86-b415-aa0b453f7447")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4537,7 +4446,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4dcc08ad-fd2a-4ac1-b3f4-b242b4045d89")
+			(uuid "a5c73680-c457-47d2-96f6-406efe683e05")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4615,7 +4524,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dd21fe7b-58fe-4da1-b92d-3a1d4e605f56")
+			(uuid "83179c3a-00c5-48c0-b43e-068d2760eaad")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4693,7 +4602,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fe4ab12-3b46-4b89-9689-bc9f36e0aa02")
+			(uuid "d38d00a2-b80e-4c0a-8ecd-de9c564c7974")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4783,10 +4692,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "63738da5-2833-4c61-ba05-7f946310ca6a")
+			(uuid "2fb98e58-af46-4098-ad96-cfc692466df8")
 		)
 		(pin "2"
-			(uuid "2ae0b84c-ae52-487e-9cba-c36de0112f24")
+			(uuid "1bf8521e-8448-4549-91e4-dd9857bcd336")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4864,7 +4773,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2d91d653-4f01-419f-9a1d-0e9d82bc6360")
+			(uuid "fa99d600-1f5f-42e1-a2a8-b366194b1a33")
 		)
 		(instances
 			(project "aquabox_final"
@@ -4942,7 +4851,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "adbca422-c420-4411-8523-51814731d595")
+			(uuid "a005e4a0-3a92-45f3-9ae8-edcec6b9907f")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5022,16 +4931,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "479ca2be-3aa6-4b6d-b23d-e5e17c413af6")
+			(uuid "7b42e994-8ba5-401f-826b-7588b11cc817")
 		)
 		(pin "2"
-			(uuid "28604c84-7a1d-4ef6-91c3-ef6415e9750a")
+			(uuid "4dea8206-690e-4555-aebf-2c0a9a4ee7a2")
 		)
 		(pin "3"
-			(uuid "a6442671-6ec4-4eae-9c08-7e10c327ae05")
+			(uuid "01521ef7-c441-413d-b673-9a73a01831cd")
 		)
 		(pin "1"
-			(uuid "c75fb422-e006-4038-abb4-cc7c56c15673")
+			(uuid "e0b41fec-867a-4f13-8053-f84ed8209add")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5110,10 +5019,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d14603c8-2953-4c2d-a508-cd63c46e9d0a")
+			(uuid "f1fe06bb-f1e9-4c7a-9581-29f856ae68ba")
 		)
 		(pin "2"
-			(uuid "6c42f001-1fe6-4356-bed7-b48a82a06d9d")
+			(uuid "37733036-f159-4eb3-bae0-ba8f5a7c133e")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5203,10 +5112,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "24094802-0641-4a02-9e3e-69e0c091bfc9")
+			(uuid "a1cd58fe-43d8-4ee9-a038-39698c5d2122")
 		)
 		(pin "2"
-			(uuid "2e0aff5a-23de-420c-b0d9-6f4465a5608d")
+			(uuid "e52632c4-881c-41de-ad38-dbf0d63b527d")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5285,10 +5194,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "894b175f-52b8-40bc-abff-c200693acb5f")
+			(uuid "8e6b0fca-9c55-4e55-8440-5833e7896661")
 		)
 		(pin "2"
-			(uuid "1d8544f6-da6a-4a3d-995d-8914e1bec98a")
+			(uuid "3c1d5dc7-a598-4209-8614-434cc9ff80db")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5301,7 +5210,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 66.04 138.43 0)
+		(at 139.7 134.62 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5312,7 +5221,7 @@
 		(fields_autoplaced yes)
 		(uuid "710c9882-f405-430b-b7b3-4151600fee1b")
 		(property "Reference" "#PWR021"
-			(at 66.04 142.24 0)
+			(at 139.7 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5323,7 +5232,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 66.04 133.35 0)
+			(at 139.7 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5333,7 +5242,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 138.43 0)
+			(at 139.7 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5344,7 +5253,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 138.43 0)
+			(at 139.7 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5355,7 +5264,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 66.04 138.43 0)
+			(at 139.7 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5366,7 +5275,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b023cb63-5088-44f9-b10d-60b091fad60a")
+			(uuid "0249efa7-1a0f-4c15-96e4-f19dbc1c0c7a")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5444,7 +5353,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "dae3956c-ea16-461b-b75e-63414ad48f80")
+			(uuid "9286b71b-7b2c-476d-a613-2c69eaa2157d")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5457,7 +5366,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 160.02 119.38 0)
+		(at 247.65 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5468,7 +5377,7 @@
 		(fields_autoplaced yes)
 		(uuid "74dd4011-3dd9-41a8-adda-238736917733")
 		(property "Reference" "#PWR034"
-			(at 160.02 123.19 0)
+			(at 247.65 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5479,7 +5388,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 160.02 114.3 0)
+			(at 247.65 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5489,7 +5398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 119.38 0)
+			(at 247.65 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5500,7 +5409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 119.38 0)
+			(at 247.65 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5511,7 +5420,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 160.02 119.38 0)
+			(at 247.65 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5522,7 +5431,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b01aa5a8-16c5-450a-9bb9-a03cadf73fca")
+			(uuid "7467ff8b-55af-4889-b60c-91bbf226acde")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5535,7 +5444,8 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 251.46 152.4 0)
+		(at 50.8 162.56 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5546,7 +5456,7 @@
 		(fields_autoplaced yes)
 		(uuid "773239dd-c098-420f-abdf-d80ad8fb6b34")
 		(property "Reference" "#PWR042"
-			(at 251.46 158.75 0)
+			(at 50.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5557,7 +5467,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 251.46 157.48 0)
+			(at 50.8 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5567,7 +5477,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 251.46 152.4 0)
+			(at 50.8 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5578,7 +5488,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 251.46 152.4 0)
+			(at 50.8 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5589,7 +5499,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 251.46 152.4 0)
+			(at 50.8 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5600,7 +5510,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "f2180a01-95d0-474c-a336-1e5613dca814")
+			(uuid "b1424059-31f0-475e-a2fc-764452561d6d")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5680,16 +5590,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "07707688-17cc-472e-8ada-8a6d751cd55f")
+			(uuid "a2947041-9848-4c5c-bbc5-1e4718b4103a")
 		)
 		(pin "2"
-			(uuid "f4f7b952-9665-4a89-84d1-284975bf21aa")
+			(uuid "bab3f2ed-b41b-4890-a551-cb71ecfc3813")
 		)
 		(pin "3"
-			(uuid "ff142b2a-7105-4af6-b284-e3e54aa635f7")
+			(uuid "c44352e5-c506-4a07-8173-da499294d212")
 		)
 		(pin "1"
-			(uuid "d164bc8d-3090-4950-8210-158899da309c")
+			(uuid "c4e5bf7e-c2f1-4837-bd90-3e29a13391ac")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5702,7 +5612,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 259.08 120.65 0)
+		(at 43.18 130.81 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5712,7 +5623,7 @@
 		(dnp no)
 		(uuid "780027f6-6328-455a-b8b9-39b82abedf79")
 		(property "Reference" "J5"
-			(at 257.81 115.57 0)
+			(at 44.45 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5723,7 +5634,7 @@
 			)
 		)
 		(property "Value" "Caixa_1"
-			(at 256.032 125.73 0)
+			(at 46.228 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5734,7 +5645,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 120.65 0)
+			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5745,7 +5656,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 120.65 0)
+			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5756,7 +5667,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 259.08 120.65 0)
+			(at 43.18 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5767,13 +5678,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "0abf0c5d-7961-40dd-abc9-eeb3ab46352d")
+			(uuid "aaaaa099-454c-4e74-8376-ad4df0798411")
 		)
 		(pin "3"
-			(uuid "9a56a467-b763-4cd8-8be6-17b06a02c373")
+			(uuid "74d116f0-9814-442f-a4b6-1987ba186b50")
 		)
 		(pin "2"
-			(uuid "4074fa97-d20a-4d3f-a595-0449cc7b7eac")
+			(uuid "9bc9f81a-79f5-4ad3-9dca-194135da5a89")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5852,10 +5763,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "60f6cb6c-53ce-4919-adac-75bdd74714a8")
+			(uuid "20aa5814-28fb-4f8d-8a4e-c53ad00b1fd1")
 		)
 		(pin "2"
-			(uuid "93cda907-2a5f-4176-8e85-8c1da28cfe5b")
+			(uuid "cfbdb70c-9243-4a73-a2cc-e5e8b0ab9983")
 		)
 		(instances
 			(project "aquabox_final"
@@ -5945,10 +5856,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f461b50f-ebbe-4cef-953a-de7678653551")
+			(uuid "667c8f1a-65d7-4dc1-9394-60b2f0c1eaf9")
 		)
 		(pin "2"
-			(uuid "5d8f5da5-7c61-433a-9b63-7b668780404c")
+			(uuid "aae61602-8053-48ed-adaf-e964d076b7a6")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6026,7 +5937,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "79e2ab14-269c-4d1a-9ad4-083ac0ed3dff")
+			(uuid "462d669f-2eb0-4d04-aeda-7253505b329c")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6105,10 +6016,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "b15d3bf7-580d-475b-838d-763892488048")
+			(uuid "98d63560-eae7-4d81-abb8-bf403df4856a")
 		)
 		(pin "2"
-			(uuid "c62682c5-83f3-4746-9e58-ba13afd81df8")
+			(uuid "959ef087-394a-456a-8220-63fd9e0fc0d1")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6121,7 +6032,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 127 139.7 90)
+		(at 214.63 143.51 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6132,7 +6043,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c910d62-d076-4103-99c6-461c352d653d")
 		(property "Reference" "D7"
-			(at 130.81 140.0174 90)
+			(at 218.44 143.8274 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6143,7 +6054,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 130.81 142.5574 90)
+			(at 218.44 146.3674 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6154,7 +6065,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 139.7 0)
+			(at 214.63 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6165,7 +6076,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 139.7 0)
+			(at 214.63 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6176,7 +6087,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 127 139.7 0)
+			(at 214.63 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6187,7 +6098,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 127 139.7 0)
+			(at 214.63 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6198,10 +6109,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "01cdd250-d047-43ff-85f3-01453f7d6e95")
+			(uuid "94bd2c20-dcc1-4d3c-ae0a-ea519391447b")
 		)
 		(pin "2"
-			(uuid "ab4f2eb3-061b-4693-b3b5-300e35885fad")
+			(uuid "6df4e987-55b0-4aab-a453-67f8f715800a")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6279,7 +6190,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "23022236-9086-403a-b692-51741d1e677b")
+			(uuid "6119d4c5-7b0c-4b24-8d4d-0efcb14f3f2e")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6358,10 +6269,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "2566902c-9717-4f3e-a9dc-4496ef5ff84a")
+			(uuid "d83111a2-84cd-49f2-b50b-8798c7a7eb15")
 		)
 		(pin "2"
-			(uuid "2e8891d0-8242-481d-951b-42268163a909")
+			(uuid "91c26c02-f693-4434-ad66-aa95f22e32c2")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6439,7 +6350,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "80bdb669-cfa2-4350-9fe2-6e567f0d63f9")
+			(uuid "fe4becc5-5822-484e-a80a-44cbf896153f")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6452,7 +6363,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 259.08 133.35 0)
+		(at 43.18 143.51 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6462,7 +6374,7 @@
 		(dnp no)
 		(uuid "932f9bd8-bb01-4042-b11d-a65ab157db35")
 		(property "Reference" "J6"
-			(at 257.81 128.524 0)
+			(at 44.45 138.684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6473,7 +6385,7 @@
 			)
 		)
 		(property "Value" "Caixa_2"
-			(at 256.286 138.684 0)
+			(at 45.974 148.844 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6484,7 +6396,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 133.35 0)
+			(at 43.18 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6495,7 +6407,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 133.35 0)
+			(at 43.18 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6506,7 +6418,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 259.08 133.35 0)
+			(at 43.18 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6517,13 +6429,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7f5fac8-f530-40ff-a63c-b6e5e2b6f346")
+			(uuid "0facae79-1e0d-452f-9b33-27d9a010a7a1")
 		)
 		(pin "3"
-			(uuid "345b6250-fc3e-4b29-babb-400f5a808812")
+			(uuid "385f818a-1cde-41c6-9796-a44369ce8737")
 		)
 		(pin "2"
-			(uuid "d6d7f699-ad74-4682-8e0b-b5830c974c86")
+			(uuid "a6b1d79f-9685-472f-b427-98953c0c4148")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6536,7 +6448,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 147.32 0)
+		(at 247.65 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6547,7 +6459,7 @@
 		(fields_autoplaced yes)
 		(uuid "97b813bb-b642-4b74-a24a-49c1946b0548")
 		(property "Reference" "#PWR035"
-			(at 160.02 153.67 0)
+			(at 247.65 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6558,7 +6470,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 152.4 0)
+			(at 247.65 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6568,7 +6480,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 147.32 0)
+			(at 247.65 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6579,7 +6491,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 147.32 0)
+			(at 247.65 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6590,7 +6502,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 160.02 147.32 0)
+			(at 247.65 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6601,7 +6513,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "05ccad2c-3060-4b8b-9968-da8e25042cd6")
+			(uuid "2ab10437-046a-401a-8746-5d7be6bb05d1")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6680,10 +6592,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "669d5c82-4a68-4860-96fc-cc71a8fe5549")
+			(uuid "8a04c48f-24aa-46c8-9fe1-0fa716cb5f3a")
 		)
 		(pin "2"
-			(uuid "34aea2e0-08db-49bd-bb69-d0dc8ed88568")
+			(uuid "90ad03b7-2ad8-471f-bb68-e5e11f106060")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6763,16 +6675,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "7fcd7173-933a-4ac7-bf36-801221a891f6")
+			(uuid "d96f1c8b-c8f0-43b7-a2f0-8861b1dbe4c8")
 		)
 		(pin "2"
-			(uuid "c590365b-96f9-407b-9ee4-39cefe2a39f8")
+			(uuid "d7f146d2-aa91-47e2-9a00-1c14cd060e29")
 		)
 		(pin "3"
-			(uuid "7a47ea6d-62a0-4249-b0ea-f786d5a5c1c3")
+			(uuid "7338efa8-b9a1-4eed-b04b-60bb8fb410cb")
 		)
 		(pin "1"
-			(uuid "46e9f8c9-3356-42fe-a982-5d6eb0e9d2b4")
+			(uuid "23abe469-850b-4125-92d6-c9b3073d1ec4")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6785,7 +6697,8 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 259.08 146.05 0)
+		(at 43.18 156.21 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6795,7 +6708,7 @@
 		(dnp no)
 		(uuid "9e086583-d8ce-404c-9b9c-0beaf749da9e")
 		(property "Reference" "J7"
-			(at 257.81 141.224 0)
+			(at 44.45 151.384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6806,7 +6719,7 @@
 			)
 		)
 		(property "Value" "Caixa_3"
-			(at 256.794 151.13 0)
+			(at 45.466 161.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6817,7 +6730,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 259.08 146.05 0)
+			(at 43.18 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6828,7 +6741,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 259.08 146.05 0)
+			(at 43.18 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6839,7 +6752,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 259.08 146.05 0)
+			(at 43.18 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6850,13 +6763,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "0af77591-64fe-4065-b137-22c888a13961")
+			(uuid "8afa3e97-26bf-44eb-b031-20ebbc8723c1")
 		)
 		(pin "2"
-			(uuid "36b7e015-fbe9-4a59-99ff-e4d0b6305fd9")
+			(uuid "1093fc5e-87d7-47da-b4e5-105b4f482e28")
 		)
 		(pin "1"
-			(uuid "558152a2-8963-4d9c-8e48-24df15b4a612")
+			(uuid "72fc777c-4e63-4794-bd87-c74692f7fd63")
 		)
 		(instances
 			(project "aquabox_final"
@@ -6935,10 +6848,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6bd979e-a83b-40de-9fbd-6ef53140a59c")
+			(uuid "9ada9420-7f3a-4902-80db-830be26fb1f9")
 		)
 		(pin "2"
-			(uuid "ab5ac810-b41e-49a4-8bd5-8593da4a83b9")
+			(uuid "d2625d15-db83-4c3e-b61c-ca4e03246e8c")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7016,7 +6929,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "cec433b6-7307-4fd2-b87d-a7c79712f030")
+			(uuid "e2db5df7-2e98-4ce6-ac7e-dae8034a279e")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7095,10 +7008,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "84a316ff-cc12-455d-9fcd-1dd37d5d58e5")
+			(uuid "d9c1254a-878d-4fa8-b126-c4af3c8c4055")
 		)
 		(pin "2"
-			(uuid "0c0f9a7e-cd5a-4c6b-841c-c63bf3a17733")
+			(uuid "f0109cc3-7288-4b63-ac33-d567d722a95f")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7177,10 +7090,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "25d4bb82-15a4-4e39-8f7d-024f3d03e771")
+			(uuid "59539c9c-0991-4160-af4e-816a7ff64d33")
 		)
 		(pin "2"
-			(uuid "fe54dfcc-9444-41b2-a106-51e7604aab47")
+			(uuid "93654476-1a9b-4421-a251-b19b97c5b910")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7259,10 +7172,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "ef639d25-792e-48ad-af13-cb2d6137c6b0")
+			(uuid "c4c64fa2-1539-4f5a-bb40-1fd787267dd7")
 		)
 		(pin "2"
-			(uuid "db110e8b-03b7-4842-badf-bb8ffa0ae656")
+			(uuid "55aeb136-c4cf-4390-934e-7677ac6983c1")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7275,7 +7188,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 127 129.54 0)
+		(at 214.63 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7286,7 +7199,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae2b9f2b-ddde-4c38-b072-c81090b325c2")
 		(property "Reference" "R18"
-			(at 129.54 128.2699 0)
+			(at 217.17 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7297,7 +7210,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 129.54 130.8099 0)
+			(at 217.17 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7308,7 +7221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 125.222 129.54 90)
+			(at 212.852 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7319,7 +7232,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 129.54 0)
+			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7330,7 +7243,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 127 129.54 0)
+			(at 214.63 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7341,10 +7254,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "092f83cc-71f4-4752-a76e-ff339ae92b73")
+			(uuid "b35299f3-7133-4d08-a594-2407c88f7bdf")
 		)
 		(pin "2"
-			(uuid "805927fb-ed2e-4d4e-8b7c-50e4e41ad78a")
+			(uuid "efb4d4d6-30ea-4243-beae-b7e4e22c3349")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7423,10 +7336,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "68d5691d-cb1c-47fb-86c2-457dc3ff5b83")
+			(uuid "d54dae56-fb89-428c-ae12-c147f5e477c5")
 		)
 		(pin "2"
-			(uuid "912b82a9-f2c0-4514-87b5-e09f64264ede")
+			(uuid "1180eff1-2ebb-4e78-9089-d92c32eff683")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7505,10 +7418,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "5f7b067d-c74e-499f-aa42-bb6b37f837ad")
+			(uuid "805b30de-4695-4965-abb4-7b99e8211f7b")
 		)
 		(pin "2"
-			(uuid "ebfee85a-46f1-43b0-bf48-c0ff485a616c")
+			(uuid "17d7f9d4-764e-45cc-95ab-f5297a5e2a7b")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7521,7 +7434,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 57.15 146.05 0)
+		(at 130.81 142.24 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -7532,7 +7445,7 @@
 		(dnp no)
 		(uuid "b148e58f-55b5-4697-8bd4-393f9e32188d")
 		(property "Reference" "J4"
-			(at 58.42 140.97 0)
+			(at 132.08 137.16 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7543,7 +7456,7 @@
 			)
 		)
 		(property "Value" "Sensor de Fluxo"
-			(at 64.262 151.384 0)
+			(at 137.922 147.574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7554,7 +7467,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 57.15 146.05 0)
+			(at 130.81 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7565,7 +7478,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 57.15 146.05 0)
+			(at 130.81 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7576,7 +7489,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 57.15 146.05 0)
+			(at 130.81 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7587,13 +7500,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "095e9ff7-fdff-406e-8283-8f464e3fde96")
+			(uuid "ffb600ba-caee-4396-a317-d96e13cb3cc4")
 		)
 		(pin "3"
-			(uuid "a00b53ab-a143-46a5-8c6a-475a491842a3")
+			(uuid "665d7c88-d0df-4f3f-b14b-5eb0c85ec3f1")
 		)
 		(pin "2"
-			(uuid "94b5d1dd-692a-4eba-8e2e-9df98bf7fe5a")
+			(uuid "89d2c1cb-07d6-4198-a0bf-91a00622980d")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7683,10 +7596,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "68fd071b-b529-4d8e-b3a3-75c4b51a67fc")
+			(uuid "fb1e2827-4d23-481a-b668-da4b723a7558")
 		)
 		(pin "2"
-			(uuid "20d409e5-36df-4aba-baf7-9d38cf01785a")
+			(uuid "235e9a81-d9c1-44d1-9e78-f2080c32bd6f")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7765,10 +7678,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "63362ca8-4f31-4904-b2f6-20e675e8a9cb")
+			(uuid "5a2e24e3-afcd-4743-904f-953da011160e")
 		)
 		(pin "2"
-			(uuid "c9a09e4e-bda9-48cb-94b6-805cc0604fbd")
+			(uuid "77cc3217-616d-4020-af26-201583e22f7f")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7848,16 +7761,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "f19cfe87-a4d3-44cb-a620-43f3e8d7e518")
+			(uuid "a4539f3b-9322-4f4a-8ba9-e264ea8f1fab")
 		)
 		(pin "2"
-			(uuid "f7e3c0f6-b090-494a-898f-33a632856d63")
+			(uuid "bbdc80cd-c745-48c4-af7d-89de7e30bf79")
 		)
 		(pin "3"
-			(uuid "1649a2e6-4c41-46cf-bdef-53bd87619fc9")
+			(uuid "c42f4d34-dd84-48a6-b927-445aa6ef1fb2")
 		)
 		(pin "1"
-			(uuid "3b8f56af-c444-429d-9b27-f737237ac5b2")
+			(uuid "06bfe3b2-1ee4-406f-aeee-3ee495fadede")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7935,7 +7848,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5a704a29-b9d9-414e-8ee6-b43b1949bdfe")
+			(uuid "9b5f3bdc-e33c-4f52-ae5f-d55e7015f653")
 		)
 		(instances
 			(project "aquabox_final"
@@ -7948,7 +7861,7 @@
 	)
 	(symbol
 		(lib_id "Isolator:PC817")
-		(at 147.32 140.97 0)
+		(at 234.95 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7959,7 +7872,7 @@
 		(fields_autoplaced yes)
 		(uuid "d819ae6a-5336-4f8a-8cd2-9b30e03bd3f1")
 		(property "Reference" "U7"
-			(at 147.32 132.08 0)
+			(at 234.95 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7969,7 +7882,7 @@
 			)
 		)
 		(property "Value" "PC817"
-			(at 147.32 134.62 0)
+			(at 234.95 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7979,7 +7892,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-4_W7.62mm"
-			(at 142.24 146.05 0)
+			(at 229.87 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7992,7 +7905,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf"
-			(at 147.32 140.97 0)
+			(at 234.95 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,7 +7917,7 @@
 			)
 		)
 		(property "Description" "DC Optocoupler, Vce 35V, CTR 50-300%, DIP-4"
-			(at 147.32 140.97 0)
+			(at 234.95 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8015,16 +7928,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "68b647aa-1500-4e06-8081-a61960d30623")
+			(uuid "836f4aa3-2488-45a3-803b-78bd548a36c7")
 		)
 		(pin "2"
-			(uuid "d8afab49-a956-44ff-922a-8c72bc52f048")
+			(uuid "ee33699d-87ab-4f48-a019-f9661c093cee")
 		)
 		(pin "3"
-			(uuid "111b011a-e34f-4f06-b108-509f0da44d8f")
+			(uuid "d09f38ac-d34d-4108-841f-6bcfa23eb408")
 		)
 		(pin "1"
-			(uuid "e7c450d4-992b-4d66-97d3-1ade7b0bdc8a")
+			(uuid "1c488180-af3f-4ba3-a09f-53f9c5aaff10")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8037,7 +7950,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 160.02 129.54 0)
+		(at 247.65 133.35 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8048,7 +7961,7 @@
 		(fields_autoplaced yes)
 		(uuid "e18ed96b-8698-4aac-a53d-56a2a23939bc")
 		(property "Reference" "R24"
-			(at 162.56 128.2699 0)
+			(at 250.19 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8059,7 +7972,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 162.56 130.8099 0)
+			(at 250.19 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8070,7 +7983,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.242 129.54 90)
+			(at 245.872 133.35 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8081,7 +7994,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 129.54 0)
+			(at 247.65 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8092,7 +8005,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 160.02 129.54 0)
+			(at 247.65 133.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8103,10 +8016,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "db12116d-b21d-4fbe-8923-0d07afdd1c30")
+			(uuid "617744e4-02a8-4a94-bbb8-ba8eb87574ac")
 		)
 		(pin "2"
-			(uuid "ac1276b4-d460-4643-928c-7b012f6e586a")
+			(uuid "9cfd67ba-4d42-428d-ab51-5d34fa7edebd")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8119,7 +8032,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 134.62 119.38 0)
+		(at 222.25 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8130,7 +8043,7 @@
 		(fields_autoplaced yes)
 		(uuid "e646bcee-8533-49e9-b9e1-37fcf5abe9b1")
 		(property "Reference" "#PWR029"
-			(at 134.62 123.19 0)
+			(at 222.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8141,7 +8054,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 134.62 114.3 0)
+			(at 222.25 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8151,7 +8064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.62 119.38 0)
+			(at 222.25 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8162,7 +8075,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 119.38 0)
+			(at 222.25 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8173,7 +8086,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 134.62 119.38 0)
+			(at 222.25 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8184,7 +8097,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "99742987-0f15-47d7-8400-c36969c1f221")
+			(uuid "d77b49cf-45b1-488a-a873-c19fdf777ce0")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8263,10 +8176,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "56ad0973-dd60-4629-af2f-fc7355b00d8c")
+			(uuid "a0b744b9-a06c-458f-ae3a-667b0dcffa9f")
 		)
 		(pin "2"
-			(uuid "96a67ff9-5b7f-47c1-bbe7-b957befef3dc")
+			(uuid "19202975-8aa3-4ffa-b54e-2b6e6be60e5e")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8344,7 +8257,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "63bba1e3-9ab5-439e-b7e5-fd71302bea27")
+			(uuid "c280a027-9dd9-4864-a18f-f41a0068b5d4")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8423,10 +8336,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "a9edff6c-52e7-4824-beb4-92b3f7ae9c60")
+			(uuid "7bfbee5e-ae33-4031-b633-c68aa9d234a3")
 		)
 		(pin "2"
-			(uuid "c7821c9a-7fbb-466c-b4cd-f8fb0123fb45")
+			(uuid "b867c7df-61df-4762-abaa-1a66bafadf3b")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8504,7 +8417,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "81155a47-2f00-4a35-951c-67249de9f325")
+			(uuid "58319c4f-b5e3-42bb-bc1e-4eae6eb8fe68")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8584,16 +8497,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "fe66ff2f-531a-41ec-9643-8a939c89eab6")
+			(uuid "55de43e3-512e-48e3-a8e8-17a4efbe01e4")
 		)
 		(pin "2"
-			(uuid "f6063e96-69af-470f-8167-9f230e66a9ae")
+			(uuid "b3e9d2c6-76c1-4008-bc33-7d4b9f04f429")
 		)
 		(pin "3"
-			(uuid "51c5bbbe-02a8-449a-9d44-ba6ededb9bc6")
+			(uuid "79c11606-cde8-41ba-aac8-39b7d98cb336")
 		)
 		(pin "1"
-			(uuid "274baea0-8bcc-4435-b3ae-886364f4196c")
+			(uuid "d8c3ae9f-6297-439f-95f3-90b266e8f213")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8671,7 +8584,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e867387-f8e9-40f3-8f44-76f3c4bae636")
+			(uuid "b7005452-ac1a-48b3-853e-b3169930dd9c")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8761,10 +8674,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "6c8fb262-70e9-44fa-bfcd-a0862a66370e")
+			(uuid "3f65553e-d8e5-4958-abf3-247be973b810")
 		)
 		(pin "2"
-			(uuid "1c800093-8a62-4b4e-b840-adfa1e1e07e4")
+			(uuid "ee2d4d1c-52da-4ff2-81ca-1b99b6431dcb")
 		)
 		(instances
 			(project "aquabox_final"
@@ -8777,7 +8690,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 66.04 154.94 0)
+		(at 139.7 151.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8788,7 +8701,7 @@
 		(fields_autoplaced yes)
 		(uuid "ffd41d54-11a7-40af-aff4-8c627940e936")
 		(property "Reference" "#PWR022"
-			(at 66.04 161.29 0)
+			(at 139.7 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8799,7 +8712,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 66.04 160.02 0)
+			(at 139.7 156.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8809,7 +8722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 66.04 154.94 0)
+			(at 139.7 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8820,7 +8733,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 154.94 0)
+			(at 139.7 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8831,7 +8744,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 66.04 154.94 0)
+			(at 139.7 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8842,7 +8755,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2446d6e0-781d-44f2-9fb5-340dff34ef4e")
+			(uuid "2b5decda-66bf-4334-ac7c-3de66c48424e")
 		)
 		(instances
 			(project "aquabox_final"
