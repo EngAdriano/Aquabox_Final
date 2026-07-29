@@ -12,6 +12,16 @@
 		(comment 1 "Eng. José Adriano")
 	)
 	(lib_symbols)
+	(text "DIAGRAMA DE CONEXÃO ENTRE MÓDULOS"
+		(exclude_from_sim no)
+		(at 147.32 27.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5056a423-92da-46b9-b1c5-a48c1138f5d9")
+	)
 	(wire
 		(pts
 			(xy 91.44 118.11) (xy 140.97 118.11)

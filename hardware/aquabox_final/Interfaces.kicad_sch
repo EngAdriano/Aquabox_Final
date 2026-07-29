@@ -4,6 +4,14 @@
 	(generator_version "10.0")
 	(uuid "a01a0340-836b-48d0-a243-411d2a90c9f1")
 	(paper "A4")
+	(title_block
+		(title "Interfaces")
+		(date "2026-07-29")
+		(rev "1.0.0")
+		(company "INVENCTUS Soluções Tecnológicas")
+		(comment 1 "Eng. José Adriano")
+		(comment 2 "AQUABOX III")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC14"
 			(pin_names
