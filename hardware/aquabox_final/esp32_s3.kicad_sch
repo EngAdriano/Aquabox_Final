@@ -2727,16 +2727,6 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 96.52) (xy 69.85 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ee6be8a-0c57-4a18-8bd5-a395c74721e6")
-	)
-	(wire
-		(pts
 			(xy 236.22 88.9) (xy 248.92 88.9)
 		)
 		(stroke
@@ -3221,17 +3211,6 @@
 			(justify right)
 		)
 		(uuid "5238f4b7-f7f8-4aa0-9173-3e6e46cf8e42")
-	)
-	(hierarchical_label "TFT_BL"
-		(shape output)
-		(at 62.23 96.52 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "89dfcb23-f54e-4196-845c-a69f6fea8acc")
 	)
 	(hierarchical_label "RELAY_PUMP"
 		(shape output)
