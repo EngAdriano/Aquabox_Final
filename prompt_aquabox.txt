@@ -1,0 +1,15 @@
+
+Prompt para planejamento do AQUABOX FINAL
+
+Vamos fazer um documento com o planejamento de requisitos para o desenvolvimento do firmware para um dispositivo denominado aquabox.
+A finalidade do dispositivo será de automatizar o enchimento de caixa(s) d'água, bem como gerenciar o processo de irrigação de jardim.
+O equipameno terá três saídas solenoides para abrir e fechar o fluxo de água, também terá uma saída para acionamento de uma bomba d'água,
+cada solenóide poderá ser configurado para trabalhar com uma caixa d'água ou irrigação. Se tiver configurado para caixa, será acionado 
+ou desligado pela ação dos sensores de nível baixo, liga, ou nível alto, desliga. Se estiver configurado para trabalhar com a irrigação,
+será acionado pela configuração de hora e duração da irrigação.
+O dispositivo terá as seguintes interfaces:
+ESP32 - S3, Display TFT 1.8" ST7735, RTC - DS3231M, botões UP, DOWN, ENTER e BACK para configurações e comandos, uma saída a relé para 
+acionamento da bomba d'água, três solenóides para controle de fluxo de água, três sensores de nível baixo e três sensores de nível alto, para
+trabalhar com até três caixas d'água, caso sejam configurados, um sensor de fluxo para checagem de funcionamento da bomba d'água, uma chave
+para acionamento da bomba de forma independente e uma chave para colocar o sistema em manual ou automático. Manual para manutenção/limpezas
+das caixas, automático para trabalhar de forma autônoma.
