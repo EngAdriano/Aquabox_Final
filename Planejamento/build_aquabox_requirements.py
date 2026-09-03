@@ -127,6 +127,7 @@ add_bullets(doc,[
     'Evitar falta de água e transbordamento ao controlar o enchimento de até três caixas d\'água.',
     'Executar rotinas de irrigação por horário e duração configuráveis.',
     'Oferecer interface local simples no display TFT, com quatro botões de navegação.',
+    'Disponibilizar monitoramento e comandos remotos seguros por MQTT, sem substituir as proteções locais.',
     'Aumentar a segurança operacional por intertravamentos, alarmes e comportamento seguro diante de falhas.',
     'Manter data e hora para rotinas agendadas mesmo durante quedas de energia, por meio do RTC.'
 ])
@@ -135,7 +136,7 @@ add_bullets(doc,['Aplicativo móvel, conectividade Wi-Fi, telemetria em nuvem e 
 
 add_heading(doc,'2. Interfaces e recursos de hardware',1)
 add_table(doc,['ID','INTERFACE','FUNÇÃO NO FIRMWARE'],[
-('HW-01','ESP32-S3','Microcontrolador principal; executa controle, interface de usuário, persistência e diagnóstico.'),
+('HW-01','ESP32-S3','Microcontrolador dual-core; executa FreeRTOS, controle, interface de usuário, persistência, diagnóstico e conectividade Wi-Fi/MQTT.'),
 ('HW-02','TFT 1,8" ST7735','Exibe estado, alarmes, relógio, menus, configurações e comandos locais.'),
 ('HW-03','RTC DS3231M','Fornece data/hora para irrigação e registro de eventos; deve ser validado na inicialização.'),
 ('HW-04','Botões UP, DOWN, ENTER, BACK','Navegação, edição, confirmação e retorno nos menus.'),
@@ -238,7 +239,65 @@ add_table(doc,['ESTADO','ENTRADA/CONDIÇÃO','AÇÃO','SAÍDA'],[
 ('ALARME','Falha crítica ou bloqueante','Desliga saídas afetadas, informa causa e exige reconhecimento.','PRONTO/MANUAL quando condição normalizada')
 ],[1700,2800,2900,1960])
 
-add_heading(doc,'8. Requisitos não funcionais',1)
+add_heading(doc,'8. Arquitetura de firmware com FreeRTOS',1)
+doc.add_paragraph('O firmware deve utilizar FreeRTOS, disponível no ESP-IDF, para isolar atividades de tempo crítico das tarefas de conectividade e interface. O uso dos dois núcleos deve favorecer previsibilidade do controle hidráulico: a comunicação de rede não pode atrasar a leitura de sensores nem o desligamento de segurança.')
+add_table(doc,['TAREFA','NÚCLEO PREFERENCIAL','RESPONSABILIDADE','CLASSE DE PRIORIDADE'],[
+('Controle hidráulico','Core 1','Máquina de estados, leitura validada de nível, acionamento de válvulas/bomba, timeouts e intertravamentos.','Alta'),
+('Aquisição de fluxo','Core 1 / ISR curta','Contagem de pulsos por interrupção; processamento e cálculo de vazão em tarefa.','Alta'),
+('Wi-Fi e MQTT','Core 0','Conexão de rede, TLS, publicação de telemetria e recepção de comandos.','Média'),
+('Interface local','Core 1','Leitura de botões/chaves, atualização do TFT e navegação de menus.','Média'),
+('Persistência e log','Core 0','Gravação assíncrona de configuração e eventos, limitada para preservar a memória flash.','Baixa'),
+('Supervisão','Core 1','Watchdog de tarefas, monitoramento de filas e sinais de falha entre tarefas.','Alta')
+],[1900,1700,4100,1660])
+add_heading(doc,'8.1 Comunicação e sincronização entre tarefas',2)
+add_bullets(doc,[
+    'A tarefa de Controle hidráulico deve ser a única autorizada a alterar as saídas de bomba e solenoides.',
+    'Eventos de sensores, chaves, agenda e comandos MQTT devem chegar ao controle por filas FreeRTOS; callbacks e ISR não podem acionar cargas diretamente.',
+    'Mensagens entre tarefas devem usar estruturas versionadas e filas com tamanho definido; eventos críticos precisam ter fila reservada ou mecanismo que impeça perda silenciosa.',
+    'Mutexes devem proteger apenas recursos compartilhados de curta duração, como barramento I2C, display e armazenamento; a tarefa de controle não deve aguardar rede ou escrita em flash.',
+    'Notificações de tarefa ou event groups devem sinalizar alarmes e mudanças de estado com baixa latência.'
+])
+add_heading(doc,'8.2 Requisitos de execução em tempo real',2)
+add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
+('RNF-11','A tarefa de Controle hidráulico deve ter prioridade superior às tarefas MQTT, interface e persistência; ela não pode executar operações de rede, TLS ou gravação em flash.','Alta'),
+('RNF-12','A leitura de pulsos do sensor de fluxo deve usar interrupção ou periférico apropriado e manter o tratamento de interrupção curto, sem alocação dinâmica ou chamadas bloqueantes.','Alta'),
+('RNF-13','A recepção de comando MQTT deve apenas validar sintaticamente e enfileirar a solicitação; a autorização final e o acionamento devem ocorrer na tarefa de Controle hidráulico.','Alta'),
+('RNF-14','O firmware deve monitorar uso de pilha, ocupação de filas e reinicializações de tarefas; condições fora do limite devem gerar diagnóstico e, se necessário, estado seguro.','Alta'),
+('RNF-15','Temporizações de irrigação, pré-abertura e segurança devem usar relógio monotônico/timers do FreeRTOS, enquanto o RTC DS3231M deve ser usado para agendamento por data e hora.','Alta'),
+('RNF-16','A divisão de tarefas e afinidade de núcleos deve ser documentada em código e testada sob carga de Wi-Fi/MQTT, garantindo que a lógica de segurança permaneça responsiva.','Alta')
+],[900,7050,1410])
+add_callout(doc,'PRINCÍPIO DE SEGURANÇA','FreeRTOS melhora a organização e o paralelismo, mas não muda a autoridade do controle local: comandos MQTT, botões e agenda devem convergir para a mesma máquina de estados e para os mesmos intertravamentos.')
+
+add_heading(doc,'9. Monitoramento remoto e MQTT',1)
+doc.add_paragraph('O Aquabox deve usar MQTT sobre Wi-Fi para publicar telemetria e receber comandos. A comunicação remota complementa a interface local; ela não pode contornar chaves físicas, intertravamentos nem alarmes críticos.')
+add_heading(doc,'8.1 Conexão e tópicos',2)
+add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
+('RF-40','O firmware deve permitir configurar SSID, senha Wi-Fi, endereço/porta do broker MQTT, credenciais, ID do dispositivo e prefixo de tópicos.','Alta'),
+('RF-41','A conexão MQTT deve usar TLS quando o broker estiver configurado para conexão segura; certificados ou fingerprint devem ser persistidos de forma protegida.','Alta'),
+('RF-42','O dispositivo deve publicar disponibilidade via mensagem de nascimento e testamento (LWT), indicando online/offline.','Alta'),
+('RF-43','O firmware deve reconectar automaticamente ao Wi-Fi e ao broker com retentativas progressivas, sem bloquear a lógica local de controle.','Alta'),
+('RF-44','A ausência de conexão MQTT não deve interromper a automação local nem impedir comandos pelos botões e chaves.','Alta')
+],[900,7050,1410])
+add_heading(doc,'8.2 Telemetria publicada',2)
+add_table(doc,['TÓPICO RELATIVO','RETAIN','CONTEÚDO MÍNIMO'],[
+('aquabox/{id}/status','Sim','Disponibilidade, modo Manual/Automático, versão, RSSI, hora, estado da bomba e alarmes ativos.'),
+('aquabox/{id}/telemetry','Não','Leituras de nível baixo/alto, estado das solenoides, fluxo, vazão, totalizador, ciclo ativo e tempo restante.'),
+('aquabox/{id}/event','Não','Inicialização, mudanças de modo, início/fim de ciclo, comandos recebidos, falhas e reconhecimentos.'),
+('aquabox/{id}/config','Não','Resposta de leitura de configuração não sigilosa e confirmação de atualização aceita/rejeitada.')
+],[3150,900,5310])
+add_heading(doc,'8.3 Comandos remotos e segurança',2)
+add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
+('RF-45','O firmware deve assinar apenas o tópico aquabox/{id}/command e validar o formato, versão, ID de correlação, timestamp e prazo de expiração de cada comando.','Alta'),
+('RF-46','Cada comando deve retornar confirmação no tópico aquabox/{id}/response com ID de correlação, resultado, motivo de recusa e estado final observado.','Alta'),
+('RF-47','Comandos remotos permitidos: leitura de estado/configuração, atualização de agenda/parâmetros não críticos, iniciar/parar irrigação e reconhecer alarme não crítico.','Alta'),
+('RF-48','Comandos remotos que acionem bomba ou solenoide devem ser aceitos somente com a chave em Automático, sem alarme bloqueante, com intertravamentos satisfeitos e duração limitada configurável.','Alta'),
+('RF-49','Comandos remotos nunca devem alterar o estado da chave Manual/Automático, desabilitar proteção de fluxo, ignorar nível alto ou desbloquear alarmes críticos.','Alta'),
+('RF-50','O firmware deve rejeitar comandos duplicados, expirados, malformados ou de origem não autenticada e registrar a rejeição no log de eventos.','Alta'),
+('RF-51','Configurações sigilosas, como senha Wi-Fi, senha MQTT e material de certificado, nunca devem ser publicadas em tópicos MQTT nem exibidas integralmente no display.','Alta')
+],[900,7050,1410])
+add_callout(doc,'EXEMPLO DE COMANDO','Publicar em aquabox/{id}/command: {"id":"cmd-123","action":"start_irrigation","channel":2,"duration_s":600,"expires_at":"2026-09-02T15:30:00Z"}. A execução depende dos mesmos intertravamentos aplicados localmente.')
+
+add_heading(doc,'10. Requisitos não funcionais',1)
 add_table(doc,['ID','REQUISITO'],[
 ('RNF-01','O ciclo principal deve responder a uma mudança de sensor de nível validada em até 1 segundo, excluído o tempo de filtro configurado.'),
 ('RNF-02','A interface local deve permanecer navegável durante monitoramento de fluxo e temporizações, sem bloqueios perceptíveis.'),
@@ -246,10 +305,13 @@ add_table(doc,['ID','REQUISITO'],[
 ('RNF-04','O firmware deve separar camada de hardware, lógica de controle, persistência, interface e diagnóstico para permitir testes unitários.'),
 ('RNF-05','Eventos importantes devem ser armazenados em log circular: inicialização, acionamentos, encerramentos, alarmes, mudanças de configuração e alternância de modo.'),
 ('RNF-06','O projeto deve prever watchdog, tratamento de erro de periféricos e mecanismo de recuperação sem acionar cargas indevidamente.'),
-('RNF-07','A versão do firmware, o esquema de configuração e a causa do último reset devem estar disponíveis no menu de diagnóstico.')
+('RNF-07','A versão do firmware, o esquema de configuração e a causa do último reset devem estar disponíveis no menu de diagnóstico.'),
+('RNF-08','A telemetria MQTT deve usar payload JSON versionado, com limite de tamanho e taxa de publicação configurável para evitar saturar rede ou broker.'),
+('RNF-09','Credenciais e parâmetros de rede devem ser armazenados em área não volátil com proteção contra leitura casual e não podem constar em logs.'),
+('RNF-10','Falhas de Wi-Fi, DNS ou broker devem ser registradas com limitação de frequência, evitando desgaste excessivo da memória de log.')
 ],[1200,8160])
 
-add_heading(doc,'9. Critérios de aceitação e testes',1)
+add_heading(doc,'11. Critérios de aceitação e testes',1)
 add_table(doc,['CASO','CENÁRIO','RESULTADO ESPERADO'],[
 ('CT-01','Caixa 1: sensor baixo ativa, alto inativo, modo Automático.','S1 abre, bomba liga após pré-abertura, fluxo é detectado e a tela indica enchimento.'),
 ('CT-02','Durante CT-01, sensor alto da caixa 1 ativa.','S1 fecha; bomba desliga após atraso se não houver outra demanda.'),
@@ -260,16 +322,26 @@ add_table(doc,['CASO','CENÁRIO','RESULTADO ESPERADO'],[
 ('CT-07','Sensor baixo e alto ativos simultaneamente em uma caixa configurada.','Canal é bloqueado, válvula fecha e alarme AL-03 é exibido.'),
 ('CT-08','RTC desconectado ou data/hora inválida.','Irrigação automática fica bloqueada; enchimento por nível continua disponível; alarme AL-04 é exibido.'),
 ('CT-09','Reinício durante uma saída ativa.','Após reiniciar, todas as saídas permanecem desligadas até a reavaliação completa.'),
-('CT-10','Usuário altera tempo máximo de enchimento fora de faixa.','Interface rejeita o valor, informa a faixa permitida e mantém o valor anterior.')
+('CT-10','Usuário altera tempo máximo de enchimento fora de faixa.','Interface rejeita o valor, informa a faixa permitida e mantém o valor anterior.'),
+('CT-11','Broker MQTT indisponível durante operação local.','Automação local continua; o firmware retenta conexão sem travar interface ou controle.'),
+('CT-12','Comando MQTT válido para iniciar irrigação S2 em Automático, sem alarmes.','Sistema valida prazo e intertravamentos, inicia S2 respeitando pré-abertura e publica confirmação.'),
+('CT-13','Comando MQTT tenta ligar bomba com chave em Manual ou sem válvula autorizada.','Comando é recusado, nenhuma saída é alterada e o motivo é publicado em response/event.'),
+('CT-14','Comando MQTT expirado ou repetido.','Comando é recusado, identificado pelo ID de correlação e registrado no histórico.'),
+('CT-15','Publicação MQTT contínua e reconexões de Wi-Fi durante enchimento.','A tarefa de Controle mantém leitura de nível, fluxo e timeout dentro dos limites definidos; não há atraso no desligamento por nível alto.'),
+('CT-16','Fila de comandos MQTT cheia ou comando malformado sob carga.','O comando é descartado de forma controlada, com evento de diagnóstico; as saídas mantêm o último estado seguro.'),
+('CT-17','Tarefa de persistência lenta durante operação crítica.','A gravação ocorre de forma assíncrona e não bloqueia a tarefa de Controle nem o processamento do sensor de fluxo.')
 ],[900,4000,4460])
 
-add_heading(doc,'10. Decisões pendentes para a próxima revisão',1)
+add_heading(doc,'12. Decisões pendentes para a próxima revisão',1)
 add_bullets(doc,[
     'Definir características elétricas e lógica ativa dos sensores de nível, chaves, relé e drivers de solenoide (ativo alto/baixo, pull-up/pull-down e isolamento).',
     'Definir limites configuráveis: duração máxima de irrigação, timeout de enchimento, janela de atraso, debounce e faixas da vazão esperada.',
     'Confirmar se a irrigação terá dias da semana, múltiplos horários por canal e regras para pular ciclos em caso de falta de água.',
     'Definir comportamento da chave de bomba independente: somente solicitação manual com válvula aberta ou operação de teste com regra adicional.',
     'Definir retenção de configuração e de histórico, além da necessidade de bateria no RTC e política para horário inválido.',
+    'Definir broker MQTT, política de credenciais, uso obrigatório de TLS, certificado de autoridade e processo de provisionamento Wi-Fi.',
+    'Definir permissões de comando remoto por perfil/usuário, retenção de telemetria e integração prevista com painel ou aplicativo.',
+    'Definir orçamento de CPU, tamanho de pilha, prioridades e afinidade definitiva de cada tarefa FreeRTOS após prototipação com Wi-Fi e display reais.',
     'Validar requisitos de proteção elétrica, caixa, grau de proteção ambiental e normas aplicáveis ao conjunto.'
 ])
 add_callout(doc,'PRÓXIMO PASSO RECOMENDADO','Transformar este planejamento em uma especificação de hardware/IO e um diagrama de estados detalhado, antes de iniciar a implementação do firmware.')
