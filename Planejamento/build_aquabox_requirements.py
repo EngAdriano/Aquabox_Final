@@ -148,11 +148,27 @@ add_table(doc,['ID','INTERFACE','FUNÇÃO NO FIRMWARE'],[
 ('HW-10','Chave bomba independente','Solicita acionamento local da bomba, sujeito aos intertravamentos de segurança.'),
 ('HW-11','Chave Manual/Automático','Seleciona operação autônoma ou manutenção/limpeza com comandos manuais.')
 ],[1000,2100,6260])
+add_heading(doc,'2.1 Pinagem e características elétricas definidas',2)
+add_table(doc,['GPIO','SINAL','LÓGICA E PULL','ISOLAÇÃO / DIREÇÃO'],[
+('1, 2','I2C_SDA, I2C_SCL','I2C; pull-up externo','Direto; interface RTC DS3231M e AT24C32'),
+('4, 5, 6, 15','BTN_UP, BTN_DOWN, BTN_ENTER, BTN_BACK','Ativo alto; pull externo','Direto; entrada'),
+('8, 9, 10, 11, 12, 13','TFT_DC, TFT_CS, TFT_RST, SPI_MOSI, SPI_SCK, SD_CS','SPI; pull externo','Direto; display TFT e SD'),
+('14','FLOW_COUNTER','Pulsos; pull externo','Optoacoplado; entrada'),
+('16','RELAY_PUMP','Ativo alto; pull externo','Optoacoplado; saída para relé 220 V AC'),
+('17, 18, 21','SOL_1, SOL_2, SOL_3','Ativo alto; pull externo','Optoacoplado; saídas para solenoides'),
+('39, 40','S1_LOW, S1_HIGH','Ativo baixo; pull externo','Optoacoplado; entradas de nível da caixa 1'),
+('41, 42','S2_LOW, S2_HIGH','Ativo baixo; pull externo','Optoacoplado; entradas de nível da caixa 2'),
+('43, 44','S3_LOW, S3_HIGH','Ativo baixo; pull externo','Optoacoplado; entradas de nível da caixa 3'),
+('38','BOMBA_ON_OFF','Ativo alto; pull externo','Direto; entrada da chave de bomba'),
+('47','MAN_AUTO','Ativo alto; pull externo','Direto; entrada da chave Manual/Automático'),
+('7, 48','Reservados','Não definido','Disponíveis para evolução futura'),
+('0, 3, 19, 20, 35, 36, 37, 45, 46','Reservados da placa','Não utilizar','Boot, USB ou Flash/PSRAM')
+],[1300,2150,2450,3460])
 
 add_heading(doc,'3. Modelo de configuração',1)
 doc.add_paragraph('Cada canal de solenoide (S1, S2 e S3) deve possuir configuração independente. Um canal não utilizado deve poder ser desabilitado, permanecendo fechado e excluído das lógicas de demanda.')
 add_table(doc,['PARÂMETRO POR CANAL','CAIXA D\'ÁGUA','IRRIGAÇÃO'],[
-('Modo','Caixa d\'água','Irrigação'),('Habilitado','Sim/Não','Sim/Não'),('Vínculo de sensores','Sensor baixo e sensor alto do mesmo índice lógico','Não se aplica'),('Agenda','Não se aplica','Hora de início e duração; permitir pelo menos uma agenda por canal'),('Demanda de bomba','Solicita bomba enquanto a válvula estiver aberta','Solicita bomba durante o ciclo, salvo configuração futura diferente'),('Estado seguro','Fechar válvula em alarme crítico','Fechar válvula ao fim da duração ou em alarme crítico')
+('Modo','Caixa d\'água','Irrigação'),('Habilitado','Sim/Não','Sim/Não'),('Vínculo de sensores','Sensor baixo e sensor alto do mesmo índice lógico','Não se aplica'),('Agenda','Não se aplica','Dias da semana; no mínimo dois horários por canal, cada um com duração'),('Demanda de bomba','Solicita bomba enquanto a válvula estiver aberta','Solicita bomba durante o ciclo'),('Estado seguro','Fechar válvula em alarme crítico','Fechar válvula ao fim da duração ou em alarme crítico')
 ],[2500,3430,3430])
 add_callout(doc,'REGRA DE VINCULAÇÃO','Na versão inicial, S1 deve usar os sensores de nível 1, S2 os sensores 2 e S3 os sensores 3 quando estiverem no modo Caixa d\'água. O mapeamento cruzado de sensores é uma evolução futura, para evitar complexidade de comissionamento.')
 
@@ -178,20 +194,21 @@ add_heading(doc,'4.3 Controle de irrigação',2)
 add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
 ('RF-20','Para canal em modo Irrigação, o firmware deve abrir a solenoide no horário programado quando estiver em Automático.','Alta'),
 ('RF-21','O firmware deve manter a solenoide aberta pela duração configurada e fechá-la automaticamente ao término.','Alta'),
-('RF-22','Cada agenda deve permitir habilitar/desabilitar o ciclo sem apagar horário ou duração.','Média'),
+('RF-22','Cada canal de irrigação deve permitir ao menos duas agendas diárias, com horário, duração, dias da semana e habilitação independentes.','Alta'),
 ('RF-23','Quando dois ou mais canais de irrigação coincidirem, o firmware deve executar apenas um por vez, em ordem crescente de canal, para evitar exceder a capacidade hidráulica.','Alta'),
-('RF-24','Uma irrigação pendente por conflito deve iniciar após a conclusão do ciclo anterior somente se ainda estiver dentro de uma janela configurável; fora da janela, deve ser registrada como perdida.','Média'),
+('RF-24','Uma irrigação pendente por conflito deve iniciar após o ciclo anterior somente se ainda estiver dentro da janela de atraso de 5 minutos; fora dela, deve ser registrada como perdida.','Média'),
+('RF-26','Sem água disponível para irrigação, o firmware deve gerar alerta, manter o ciclo pendente e iniciá-lo apenas após normalização da disponibilidade, respeitando a janela de atraso.','Alta'),
 ('RF-25','O usuário deve poder interromper uma irrigação ativa pelo menu; a solenoide deve fechar imediatamente e o evento deve ser registrado.','Alta')
 ],[900,7050,1410])
 
 add_heading(doc,'4.4 Bomba e sensor de fluxo',2)
 add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
-('RF-30','A bomba deve ligar somente quando existir ao menos uma demanda autorizada de caixa ou irrigação, ou quando a chave independente solicitar operação manual.','Alta'),
+('RF-30','A bomba deve ligar quando existir demanda autorizada de caixa ou irrigação, ou pela chave independente para a conexão hidráulica de uso geral.','Alta'),
 ('RF-31','Antes de acionar a bomba, o firmware deve abrir a solenoide solicitante e aguardar um atraso configurável de pré-abertura.','Alta'),
 ('RF-32','Após ligar a bomba, o firmware deve verificar a presença de pulsos do sensor de fluxo dentro de um tempo de partida configurável.','Alta'),
 ('RF-33','A ausência de fluxo durante o tempo de partida ou durante operação por tempo configurável deve desligar a bomba, fechar as válvulas ativas e gerar alarme de falta de fluxo.','Alta'),
 ('RF-34','O firmware deve calcular e exibir vazão aproximada e totalizador de pulsos/volume quando a constante de calibração for configurada.','Média'),
-('RF-35','A chave de bomba independente deve ser indicada no display e não pode ignorar alarmes críticos de falta de fluxo, sobretempo ou falha de segurança.','Alta')
+('RF-35','A chave de bomba independente deve acionar a conexão hidráulica própria, sem requerer solenoide aberta; deve ser indicada no display e não pode ignorar alarmes críticos de falta de fluxo, sobretempo ou falha de segurança.','Alta')
 ],[900,7050,1410])
 
 add_heading(doc,'4.5 Operação manual e automática',2)
@@ -215,7 +232,7 @@ add_table(doc,['TELA/MENU','CONTEÚDO E AÇÕES'],[
 add_heading(doc,'6. Regras de segurança e intertravamentos',1)
 add_bullets(doc,[
     'Todas as saídas devem iniciar desligadas e permanecer desligadas na ausência de configuração válida ou em falha crítica.',
-    'Nunca acionar bomba sem ao menos uma solenoide autorizada aberta, exceto em um modo de teste de comissionamento explicitamente protegido e ainda a definir.',
+    'Nunca acionar bomba sem ao menos uma solenoide autorizada aberta, exceto quando a chave de bomba independente solicitar a conexão hidráulica de uso geral e todos os seus intertravamentos estiverem satisfeitos.',
     'Uma falha de falta de fluxo, tempo máximo de enchimento, sensores incoerentes ou RTC inválido para irrigação deve impedir novo acionamento relacionado até reconhecimento e condição normalizada.',
     'O firmware deve aplicar debounce/filtragem configurável a botões, chaves e sensores de nível para evitar transições falsas.',
     'As solenoides devem fechar antes do desligamento da bomba, respeitando atraso configurável, exceto em situação de corte de segurança que exige desligamento imediato.',
@@ -270,22 +287,22 @@ add_callout(doc,'PRINCÍPIO DE SEGURANÇA','FreeRTOS melhora a organização e o
 
 add_heading(doc,'9. Monitoramento remoto e MQTT',1)
 doc.add_paragraph('O Aquabox deve usar MQTT sobre Wi-Fi para publicar telemetria e receber comandos. A comunicação remota complementa a interface local; ela não pode contornar chaves físicas, intertravamentos nem alarmes críticos.')
-add_heading(doc,'8.1 Conexão e tópicos',2)
+add_heading(doc,'9.1 Conexão e tópicos',2)
 add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
-('RF-40','O firmware deve permitir configurar SSID, senha Wi-Fi, endereço/porta do broker MQTT, credenciais, ID do dispositivo e prefixo de tópicos.','Alta'),
-('RF-41','A conexão MQTT deve usar TLS quando o broker estiver configurado para conexão segura; certificados ou fingerprint devem ser persistidos de forma protegida.','Alta'),
+('RF-40','O firmware deve permitir configurar SSID, senha Wi-Fi, endereço/porta do broker HiveMQ, credenciais exclusivas, ID do dispositivo e prefixo de tópicos.','Alta'),
+('RF-41','A conexão MQTT com HiveMQ deve usar TLS obrigatório, validação de certificado de autoridade e credenciais exclusivas por Aquabox, persistidas de forma protegida.','Alta'),
 ('RF-42','O dispositivo deve publicar disponibilidade via mensagem de nascimento e testamento (LWT), indicando online/offline.','Alta'),
 ('RF-43','O firmware deve reconectar automaticamente ao Wi-Fi e ao broker com retentativas progressivas, sem bloquear a lógica local de controle.','Alta'),
 ('RF-44','A ausência de conexão MQTT não deve interromper a automação local nem impedir comandos pelos botões e chaves.','Alta')
 ],[900,7050,1410])
-add_heading(doc,'8.2 Telemetria publicada',2)
+add_heading(doc,'9.2 Telemetria publicada',2)
 add_table(doc,['TÓPICO RELATIVO','RETAIN','CONTEÚDO MÍNIMO'],[
 ('aquabox/{id}/status','Sim','Disponibilidade, modo Manual/Automático, versão, RSSI, hora, estado da bomba e alarmes ativos.'),
 ('aquabox/{id}/telemetry','Não','Leituras de nível baixo/alto, estado das solenoides, fluxo, vazão, totalizador, ciclo ativo e tempo restante.'),
 ('aquabox/{id}/event','Não','Inicialização, mudanças de modo, início/fim de ciclo, comandos recebidos, falhas e reconhecimentos.'),
 ('aquabox/{id}/config','Não','Resposta de leitura de configuração não sigilosa e confirmação de atualização aceita/rejeitada.')
 ],[3150,900,5310])
-add_heading(doc,'8.3 Comandos remotos e segurança',2)
+add_heading(doc,'9.3 Comandos remotos e segurança',2)
 add_table(doc,['ID','REQUISITO','PRIORIDADE'],[
 ('RF-45','O firmware deve assinar apenas o tópico aquabox/{id}/command e validar o formato, versão, ID de correlação, timestamp e prazo de expiração de cada comando.','Alta'),
 ('RF-46','Cada comando deve retornar confirmação no tópico aquabox/{id}/response com ID de correlação, resultado, motivo de recusa e estado final observado.','Alta'),
@@ -303,11 +320,12 @@ add_table(doc,['ID','REQUISITO'],[
 ('RNF-02','A interface local deve permanecer navegável durante monitoramento de fluxo e temporizações, sem bloqueios perceptíveis.'),
 ('RNF-03','Parâmetros críticos devem ter validação de faixa, valores padrão seguros e confirmação antes de gravar.'),
 ('RNF-04','O firmware deve separar camada de hardware, lógica de controle, persistência, interface e diagnóstico para permitir testes unitários.'),
-('RNF-05','Eventos importantes devem ser armazenados em log circular: inicialização, acionamentos, encerramentos, alarmes, mudanças de configuração e alternância de modo.'),
+('RNF-05','Eventos importantes devem ser armazenados em log circular na EEPROM AT24C32 do módulo RTC: inicialização, acionamentos, encerramentos, alarmes, mudanças de configuração e alternância de modo.'),
 ('RNF-06','O projeto deve prever watchdog, tratamento de erro de periféricos e mecanismo de recuperação sem acionar cargas indevidamente.'),
 ('RNF-07','A versão do firmware, o esquema de configuração e a causa do último reset devem estar disponíveis no menu de diagnóstico.'),
 ('RNF-08','A telemetria MQTT deve usar payload JSON versionado, com limite de tamanho e taxa de publicação configurável para evitar saturar rede ou broker.'),
-('RNF-09','Credenciais e parâmetros de rede devem ser armazenados em área não volátil com proteção contra leitura casual e não podem constar em logs.'),
+('RNF-09','Configurações devem ser mantidas em memória não volátil e credenciais de rede em área protegida; nenhum segredo pode constar em logs.'),
+('RNF-17','A bateria do DS3231M deve manter a data e hora sem energia externa. A AT24C32 deve manter o histórico por ser memória não volátil; a integração física do módulo deve ser verificada no protótipo.'),
 ('RNF-10','Falhas de Wi-Fi, DNS ou broker devem ser registradas com limitação de frequência, evitando desgaste excessivo da memória de log.')
 ],[1200,8160])
 
@@ -332,19 +350,32 @@ add_table(doc,['CASO','CENÁRIO','RESULTADO ESPERADO'],[
 ('CT-17','Tarefa de persistência lenta durante operação crítica.','A gravação ocorre de forma assíncrona e não bloqueia a tarefa de Controle nem o processamento do sensor de fluxo.')
 ],[900,4000,4460])
 
-add_heading(doc,'12. Decisões pendentes para a próxima revisão',1)
-add_bullets(doc,[
-    'Definir características elétricas e lógica ativa dos sensores de nível, chaves, relé e drivers de solenoide (ativo alto/baixo, pull-up/pull-down e isolamento).',
-    'Definir limites configuráveis: duração máxima de irrigação, timeout de enchimento, janela de atraso, debounce e faixas da vazão esperada.',
-    'Confirmar se a irrigação terá dias da semana, múltiplos horários por canal e regras para pular ciclos em caso de falta de água.',
-    'Definir comportamento da chave de bomba independente: somente solicitação manual com válvula aberta ou operação de teste com regra adicional.',
-    'Definir retenção de configuração e de histórico, além da necessidade de bateria no RTC e política para horário inválido.',
-    'Definir broker MQTT, política de credenciais, uso obrigatório de TLS, certificado de autoridade e processo de provisionamento Wi-Fi.',
-    'Definir permissões de comando remoto por perfil/usuário, retenção de telemetria e integração prevista com painel ou aplicativo.',
-    'Definir orçamento de CPU, tamanho de pilha, prioridades e afinidade definitiva de cada tarefa FreeRTOS após prototipação com Wi-Fi e display reais.',
-    'Validar requisitos de proteção elétrica, caixa, grau de proteção ambiental e normas aplicáveis ao conjunto.'
-])
-add_callout(doc,'PRÓXIMO PASSO RECOMENDADO','Transformar este planejamento em uma especificação de hardware/IO e um diagrama de estados detalhado, antes de iniciar a implementação do firmware.')
+add_heading(doc,'12. Decisões de projeto confirmadas',1)
+add_heading(doc,'12.1 Limites e comportamento operacional',2)
+add_table(doc,['ITEM','DECISÃO'],[
+('Duração máxima de irrigação','60 minutos por setor/solenoide.'),
+('Timeout de enchimento','10 minutos por caixa/canal.'),
+('Janela entre setores','5 minutos. Também limita a execução de irrigação pendente por conflito ou normalização de água.'),
+('Debounce','Implementado em hardware. O firmware ainda deve validar coerência temporal dos níveis e das chaves antes de mudar o estado.'),
+('Faixa de vazão','Configurável por instalação, pois depende da rede hidráulica. Os limites mínimo e máximo devem ser usados pelo alarme de fluxo.'),
+('Falta de água','Gerar alerta; reter o ciclo de irrigação e acioná-lo após a normalização, somente dentro da janela configurada.')
+],[3000,6360])
+add_heading(doc,'12.2 Persistência, RTC e histórico',2)
+doc.add_paragraph('As configurações operacionais devem permanecer em memória não volátil para sobreviver à falta de energia. O histórico circular será armazenado na EEPROM AT24C32 do módulo RTC. A bateria do DS3231M preserva data e hora durante a ausência de energia; a retenção da AT24C32 decorre de sua memória não volátil e deve ser confirmada no teste integrado do módulo.')
+add_heading(doc,'12.3 MQTT e política de acesso remoto',2)
+doc.add_paragraph('O broker será o HiveMQ. Cada Aquabox instalado terá credenciais próprias, com dois dispositivos no lançamento inicial. TLS e validação do certificado da autoridade certificadora são obrigatórios. O provisionamento deve ocorrer localmente, por tela de configuração ou procedimento técnico controlado, e as credenciais não podem ser exibidas nem publicadas.')
+add_table(doc,['PERFIL','PERMISSÕES','RESTRIÇÕES'],[
+('Visualizador','Ler status, telemetria e eventos.','Sem publicação no tópico command e sem acesso a credenciais.'),
+('Operador','Todas as permissões de visualizador; iniciar/parar irrigação dentro dos limites; reconhecer alarme não crítico.','Não altera rede, credenciais, limites de segurança ou modo Manual/Automático.'),
+('Administrador','Todas as permissões de operador; configurar agendas, parâmetros não críticos e cadastro de dispositivo.','Alterações críticas exigem confirmação local e auditoria no histórico.'),
+('Serviço de painel','Publica comandos somente após autenticar e autorizar o usuário; mantém trilha de auditoria.','Cada Aquabox só publica em aquabox/{id}/# e só assina aquabox/{id}/command. ACLs do HiveMQ devem impedir acesso cruzado entre dispositivos.')
+],[1700,4300,3360])
+doc.add_paragraph('Status permanece retido para disponibilidade e último estado conhecido. Telemetria, eventos, comandos e respostas não devem ser retidos, evitando a repetição de comandos após reconexão. O painel/aplicativo deve operar por um serviço autenticado, e não distribuir credenciais de dispositivo a usuários finais.')
+add_heading(doc,'12.4 Plataforma e evolução de hardware',2)
+doc.add_paragraph('O protótipo de desenvolvimento usa ESP32-S3 DevKitC-1 N16R8 Dual Type-C 44P, com 16 MB de Flash e 8 MB de PSRAM. A distribuição FreeRTOS especificada é inicial e será calibrada com testes no protótipo, incluindo carga de Wi-Fi, MQTT, display e sensor de fluxo. A PSRAM deve ser priorizada para buffers e dados não críticos de latência; pilhas e dados de controle crítico devem permanecer em memória interna quando requerido pelo ESP-IDF.')
+add_heading(doc,'12.5 Próxima etapa de hardware',2)
+doc.add_paragraph('Após a conclusão e validação do firmware no protótipo, o projeto seguirá para a PCB e a caixa própria. A etapa incluirá requisitos de proteção elétrica, isolamento, fontes isoladas, optoacopladores e alimentações isoladas, grau de proteção ambiental e normas aplicáveis ao conjunto final.')
+add_callout(doc,'PRÓXIMO PASSO RECOMENDADO','Criar a especificação de IO e o plano de testes do protótipo, usando a pinagem definida e os limites operacionais confirmados.')
 
 doc.core_properties.title='Planejamento de Requisitos - Firmware Aquabox'
 doc.core_properties.subject='Especificação inicial de requisitos de firmware'
